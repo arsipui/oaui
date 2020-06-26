@@ -1,0 +1,3092 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Arsip ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://arsip.ui.ac.id/ontology/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://arsip.ui.ac.id/ontology/","name":"Arsip ontology", "headline":"Arsip Universitas Indonesia (UI) mengelola sejumlah data tidak terstruktur dalam berbagai bentuk dan format (digital dan tercetak). Dalam mendeskripsikan sebuah materi arsip, informasi dari beberapa entitas diperlukan (domain: arsip, pencipta, dan peristiwa) keterhubungan antar entitas tersebut bermanfaat untuk mengetahui konteks dan nilai informasi arsip. Document and Content Management (DCM) merupakan salah satu bagian dari Data Management Framework. DCM dikategorikan dalam pengelolaan data tidak terstruktur. 
+
+
+Kantor Arsip mengalami permasalahan dalam menghubungkan berbagai arsip tersebut secara kontekstual, hal tersebut mengakibatkan informasi arsip yang ditelusur memiliki jumlah relevansi yang rendah. Hasil observasi menemukan terdapat duplikat pada arsip dengan proses bisnis yang saling terkait. Berdasarkan hal tersebut penelitian ini bermaksud merancang sebuah model data dengan teknologi jejaring semantik yang dapat digunakan untuk menghubungkan entitas data pada Arsip UI. Model representasi pengetahuan (ontologi) dipilih oleh peneliti sebagai rancangan model data arsip universitas. 
+
+
+Ontologi disusun berdasarkan Record in Context-Ontology (RiC-O) version 0.1. Transformasi data pada koleksi arsip universitas dilakukan untuk dipetakan dalam model ontologi. Model ontology dibuat dengan perangkat lunak Protégé dalam format Web Ontology Language (OWL). Pengujian dilakukan pada aspek organizational fitness dengan mengumpulkan pertanyaan kompetensi dan konfirmasi model kepada domain expert. Reasoner plugin yaitu HermiT digunakan untuk verifikasi konsistensi model. Pertanyaan kompetensi kemudian diuji pada model ontologi dengan Simple Protocol And RDF Query Language (SPARQL) dan Description Logic (DL) Query. Artefak dari penelitian ini berupa model ontologi arsip universitas sesuai dengan kebutuhan Kantor Arsip Universitas Indonesia. ", "datePublished":"Thu Jun 25 09:11:32 ICT 2020", "version":"1.0", "author":[{"@type":"Person","name":"Wahid Nurfiantara"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+ $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Arsip ontology</h1>
+
+
+<dl>
+<dt>Latest version:</dt>
+<dd><a href="https://arsip.ui.ac.id/ontology/">https://arsip.ui.ac.id/ontology/</a></dd>
+<dt>Revision:</dt>
+<dd>1.0</dd>
+<dt>Authors:</dt>
+<dd>Wahid Nurfiantara</dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Wahid Nurfiantara. Arsip ontology. Revision: 1.0.</dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+Arsip Universitas Indonesia (UI) mengelola sejumlah data tidak terstruktur dalam berbagai bentuk dan format (digital dan tercetak). Dalam mendeskripsikan sebuah materi arsip, informasi dari beberapa entitas diperlukan (domain: arsip, pencipta, dan peristiwa) keterhubungan antar entitas tersebut bermanfaat untuk mengetahui konteks dan nilai informasi arsip. Document and Content Management (DCM) merupakan salah satu bagian dari Data Management Framework. DCM dikategorikan dalam pengelolaan data tidak terstruktur. 
+
+
+Kantor Arsip mengalami permasalahan dalam menghubungkan berbagai arsip tersebut secara kontekstual, hal tersebut mengakibatkan informasi arsip yang ditelusur memiliki jumlah relevansi yang rendah. Hasil observasi menemukan terdapat duplikat pada arsip dengan proses bisnis yang saling terkait. Berdasarkan hal tersebut penelitian ini bermaksud merancang sebuah model data dengan teknologi jejaring semantik yang dapat digunakan untuk menghubungkan entitas data pada Arsip UI. Model representasi pengetahuan (ontologi) dipilih oleh peneliti sebagai rancangan model data arsip universitas. 
+
+
+Ontologi disusun berdasarkan Record in Context-Ontology (RiC-O) version 0.1. Transformasi data pada koleksi arsip universitas dilakukan untuk dipetakan dalam model ontologi. Model ontology dibuat dengan perangkat lunak Protégé dalam format Web Ontology Language (OWL). Pengujian dilakukan pada aspek organizational fitness dengan mengumpulkan pertanyaan kompetensi dan konfirmasi model kepada domain expert. Reasoner plugin yaitu HermiT digunakan untuk verifikasi konsistensi model. Pertanyaan kompetensi kemudian diuji pada model ontologi dengan Simple Protocol And RDF Query Language (SPARQL) dan Description Logic (DL) Query. Artefak dari penelitian ini berupa model ontologi arsip universitas sesuai dengan kebutuhan Kantor Arsip Universitas Indonesia. </span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;https://arsip.ui.ac.id/ontology/&gt;</td></tr>
+<tr><td><b>index-php</b></td><td>&lt;http://sekar.ui.ac.id/index.php&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+<tr><td><b>default namespace</b></td><td>&lt;https://arsip.ui.ac.id/ontology&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview">Document and Content Management (DCM) merupakan salah satu bagian dalam Data Governance. DCM menaruh perhatian pada pengelolaan data tidak terstruktur dan semi-terstruktur. Pengelolaan dokumen dan arsip yang baik dapat membantu organisasi menjadi lebih efisien (DAMA, 2017). Mekanisme pengelolaan data yang baik, seperti kemudahan dalam pencarian informasi baik pada website atau koleksi arsip sangat berkontribusi pada kepuasan pemangku kepentingan. 
+UU 43 Tahun 2009 tentang Kearsipan menyatakan â€œArsip adalah rekaman kegiatan atau peristiwa dalam berbagai bentuk dan media sesuai dengan perkembangan teknologi informasi dan komunikasiâ€¦â€�. Mengacu pada pengertian tersebut arsip tidak terbatas pada dokumen yang diciptakan pada masa lampau, termasuk arsip adalah dokumen berupa rekaman transaksi dari sebuah kegiatan atau peristiwa. Dengan perkembangan teknologi saat ini arsip dapat berbentuk fisik dan juga digital. Variasi atas bentuk dan format tersebut arsip dapat dikategorikan sebagai data tidak terstruktur. 
+Standar deskripsi (metadata) merupakan hal penting untuk mengelola data tidak terstruktur. Tanpa metadata sulit untuk mendata dan mengelola informasi. DAMA, menjelaskan beberapa hal yang menjadi acuan dalam metadata untuk data tidak terstruktur yaitu format, search-ability, self-documentation, existing pattern, content subjects, requirements. 
+Beragamnya format dan bentuk media arsip menyebabkan dampak pada hasil pencarian informasi yaitu rendahnya relevansi hasil temu-kembali informasi arsip. Sebagaimana dijelaskan sebelumnya, dalam proses pengelolaan arsip, deskripsi dilakukan pada entitas arsip, pencipta, peristiwa, dan lembaga arsip. Untuk mendapatkan informasi arsip, entitas data tersebut perlu untuk terhubung (Linked data) sehingga informasi yang didapatkan dapat tergambar secara kontekstual. 
+Kantor Arsip memiliki kebijakan yang dituangkan pada Pedoman Kearsipan Universitas Indonesia, Record Management System based on ISO 30301:2019 antara lain mengupayakan integrasi data arsip dalam satu memori kolektif universitas, temu-kembali informasi secara utuh, dan menyediakan informasi dengan cepat. Penyelenggaraan arsip universitas yang dilaksanakan oleh Kantor Arsip merupakan bentuk dari Document and Content Mangement (DCM). Kriteria tentang keberhasilan DCM dapat dilihat pada tujuan DCM (DAMA, 2017) antara lain:
+1.	Memastikan efektifitas dan efisiensi temu-kembali dan penggunaan data/ informasi dari data tidak terstruktur
+2.	Memastikan integrasi antara data tidak terstruktur dan data terstruktur
+3.	Kepatuhan terhadap aturan hukum dan ekspektasi pemangku kepentingan
+Metode pengelolaan DCM seperti arsip, dokumen, dan data tidak terstruktur dapat dilakukan dengan mekanisme controlled vocabulary (kosa kata terkendali). Kosakata terkendali merupakan daftar yang telah didefinisikan secara baku dan dapat digunakan oleh pengelola arsip dalam memberikan indeks sebuah dokumen (DAMA, 2009). Kosakata terkendali dapat berupa taksonomi, skema klasifikasi, thesaurus, hingga yang paling kompleks yaitu ontologi. Kombinasi dari data model dan taksonomi-ontologi diharapkan menghasilkan konsistensi informasi dan hubungan antar data (Engel, 2017). 
+Keterhubungan antar domain tersebut memerlukan sebuah teknologi yang dikenal dengan semantik. Ontologi merupakan bahasa yang digunakan untuk menggambarkan model (representasi) pengetahuan dan pertukaran informasi antar aplikasi jejaring semantik.
+Pada tahun 2017, International Council on Archives (ICA) mengeluarkan sebuah standar baru yang bertujuan untuk menghubungkan entitas dalam konteks arsip. Dengan menggabungkan beberapa standar deskripsi yang diterbitkan oleh ICA. Record in Context (RiC) merupakan standar deskripsi arsip yang menerapkan teknologi semantik. Tahun 2019 terbit rancangan resmi dari RiC-O (sebuah ontologi yang dibangun dari konseptual model RiC) versi 0.1. 
+Penelitian ini bermaksud merancang sebuah mekanisme (sistem/ teknologi/ standar) yang dapat mewujudkan tercapainya tujuan DCM salah satunya yaitu mengakomodir keterhubungan antara data tidak terstruktur pada koleksi arsip universitas. Untuk menyelesaikan permasalahan tersebut, penelitian ini berupaya merancang model ontologi arsip universitas. Rancangan model ontologi akan berbasis pada RiC-O v-0.1 dengan memperhatikan praktek terbaik dalam penyusunan ontologi. Penyusunan ontologi tidak terbatas pada satu domain akan tetapi mencakup beberapa domain. Hal ini dilakukan dengan pertimbangan bahwa prinsip pendeskripsian arsip tidak hanya pada isi informasi (dokumen) akan tetapi juga mencakup domain lain agar informasi dapat dipahami secara kontekstual (domain: pencipta dan unit organisasi). Untuk menggambarkan konteks yang tepat, penelitian ini mencakup domain (1) people; (2) structure; (3) task; (4) artefak (dokumen). 
+Model ontologi akan didokumentasikan agar dapat dikembangkan untuk kepentingan data model universitas. Visualisasi ontologi dibuat agar para domain expert dapat dengan mudah memahami ranganan model yang disusun (terutama kaitannya dengan pengelolaan dokumen dan arsip universitas). Sebagai bentuk validasi hasil penelitian dilakukan trianggulasi ke para domain expert dibidang kearsipan dan pengelola arsip di lingkungan UI. Evaluasi terhadap model ontologi dilakukan dengan menguji apakah ontologi yang telah disusun mampu menjawab pertanyaan kompeten yang diajukan oleh para domain expert (ahli bidang kearsipan dan pengelola arsip universitas) dan pengguna arsip (mahasiswa/ umum).
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Arsip ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+
+</div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross reference for Arsip ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Arsip ontology.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept"/>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
+            title="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+      </li>
+      <li>
+         <a href="#Activity" title="https://arsip.ui.ac.id/ontology/Activity">Activity</a>
+      </li>
+      <li>
+         <a href="#Agent" title="https://arsip.ui.ac.id/ontology/Agent">Agent</a>
+      </li>
+      <li>
+         <a href="#Archives_Type" title="https://arsip.ui.ac.id/ontology/Archives_Type">Archives Type</a>
+      </li>
+      <li>
+         <a href="#Asset" title="https://arsip.ui.ac.id/ontology/Asset">Asset</a>
+      </li>
+      <li>
+         <a href="#Building" title="https://arsip.ui.ac.id/ontology/Building">Building</a>
+      </li>
+      <li>
+         <a href="#Degree" title="https://arsip.ui.ac.id/ontology/Degree">Educational Degree</a>
+      </li>
+      <li>
+         <a href="#Educational_Organization"
+            title="https://arsip.ui.ac.id/ontology/Educational_Organization">Educational Organization</a>
+      </li>
+      <li>
+         <a href="#Event" title="https://arsip.ui.ac.id/ontology/Event">Event</a>
+      </li>
+      <li>
+         <a href="#gmd" title="https://arsip.ui.ac.id/ontology/gmd">GMD</a>
+      </li>
+      <li>
+         <a href="#Government" title="https://arsip.ui.ac.id/ontology/Government">Government</a>
+      </li>
+      <li>
+         <a href="#Unit_Group" title="https://arsip.ui.ac.id/ontology/Unit_Group">Group</a>
+      </li>
+      <li>
+         <a href="#Industry_Organization"
+            title="https://arsip.ui.ac.id/ontology/Industry_Organization">Industry Organization</a>
+      </li>
+      <li>
+         <a href="#Product" title="https://arsip.ui.ac.id/ontology/Product">Innovation</a>
+      </li>
+      <li>
+         <a href="#Instantiation" title="https://arsip.ui.ac.id/ontology/Instantiation">Instantiation</a>
+      </li>
+      <li>
+         <a href="#Kepakaran" title="https://arsip.ui.ac.id/ontology/Kepakaran">Kepakaran</a>
+      </li>
+      <li>
+         <a href="#Land" title="https://arsip.ui.ac.id/ontology/Land">Land Property</a>
+      </li>
+      <li>
+         <a href="#Dosen" title="https://arsip.ui.ac.id/ontology/Dosen">Lecturer</a>
+      </li>
+      <li>
+         <a href="#Organization" title="https://arsip.ui.ac.id/ontology/Organization">Organization</a>
+      </li>
+      <li>
+         <a href="#Organizational_Unit"
+            title="https://arsip.ui.ac.id/ontology/Organizational_Unit">Organization Unit</a>
+      </li>
+      <li>
+         <a href="#Person" title="https://arsip.ui.ac.id/ontology/Person">Person</a>
+      </li>
+      <li>
+         <a href="#Self_Storage" title="https://arsip.ui.ac.id/ontology/Self_Storage">Physical Storage</a>
+      </li>
+      <li>
+         <a href="#Place" title="https://arsip.ui.ac.id/ontology/Place">Place</a>
+      </li>
+      <li>
+         <a href="#Position" title="https://arsip.ui.ac.id/ontology/Position">Position</a>
+      </li>
+      <li>
+         <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+      </li>
+      <li>
+         <a href="#Retenstion_Schedule"
+            title="https://arsip.ui.ac.id/ontology/Retenstion_Schedule">Retention Schedule</a>
+      </li>
+      <li>
+         <a href="#Tenaga_Kependidikan"
+            title="https://arsip.ui.ac.id/ontology/Tenaga_Kependidikan">Staff</a>
+      </li>
+      <li>
+         <a href="#Mahasiswa" title="https://arsip.ui.ac.id/ontology/Mahasiswa">Student</a>
+      </li>
+      <li>
+         <a href="#Clasification_Schema"
+            title="https://arsip.ui.ac.id/ontology/Clasification_Schema">Subjects</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#Concept">
+      <h3>
+         <sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#Concept</p>
+      <div class="comment">
+         <span class="markdown"/>
+      </div>
+      <dl class="description">
+         <dt>has members</dt>
+         <dd>
+            <a href="#http://sekar.ui.ac.id/index.php/hkp-hukum-dan-pengawasan"
+               title="http://sekar.ui.ac.id/index.php/hkp-hukum-dan-pengawasan">HKP - Hukum dan Pengawasan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-00-undang-undang"
+               title="http://sekar.ui.ac.id/index.php/hkp-00-undang-undang">HKP.00 - Undang-undang</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-01-peraturan-peraturan"
+               title="http://sekar.ui.ac.id/index.php/hkp-01-peraturan-peraturan">HKP.01 - Peraturan-peraturan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-01-00-peraturan-pemerintah"
+               title="http://sekar.ui.ac.id/index.php/hkp-01-00-peraturan-pemerintah">HKP.01.00 - Peraturan Pemerintah</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-01-01-peraturan-menteri"
+               title="http://sekar.ui.ac.id/index.php/hkp-01-01-peraturan-menteri">HKP.01.01 - Peraturan Menteri</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-01-02-peraturan-universitas"
+               title="http://sekar.ui.ac.id/index.php/hkp-01-02-peraturan-universitas">HKP.01.02 - Peraturan Universitas</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-01-03-peraturan-fakultas"
+               title="http://sekar.ui.ac.id/index.php/hkp-01-03-peraturan-fakultas">HKP.01.03 - Peraturan Fakultas</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-keputusan-keputusan"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-keputusan-keputusan">HKP.02 - Keputusan-keputusan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-00-surat-keputusan-presiden"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-00-surat-keputusan-presiden">HKP.02.00 - Surat Keputusan Presiden</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-01-surat-keputusan-menteri"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-01-surat-keputusan-menteri">HKP.02.01 - Surat Keputusan Menteri</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-02-surat-keputusan-gubernur"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-02-surat-keputusan-gubernur">HKP.02.02 - Surat Keputusan Gubernur</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-03-surat-keputusan-universitas"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-03-surat-keputusan-universitas">HKP.02.03 - Surat Keputusan Universitas</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-03-00-majelis-wali-amanat-mwa"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-03-00-majelis-wali-amanat-mwa">HKP.02.03.00 - Majelis Wali Amanat (MWA)</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-03-01-senat-akademik-universitas-sau"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-03-01-senat-akademik-universitas-sau">HKP.02.03.01 - Senat Akademik Universitas (SAU)</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-03-02-dewan-guru-besar-dgb"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-03-02-dewan-guru-besar-dgb">HKP.02.03.02 - Dewan Guru Besar (DGB)</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-04-keputusan-dekan"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-04-keputusan-dekan">HKP.02.04 - Keputusan Dekan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-04-00-pengangkatan-dan-pemberhentian"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-04-00-pengangkatan-dan-pemberhentian">HKP.02.04.00 - Pengangkatan dan Pemberhentian</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-04-01-skripsi-tesis-disertasi"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-04-01-skripsi-tesis-disertasi">HKP.02.04.01 - Skripsi/ Tesis/ Disertasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-04-02-kepanitiaan"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-04-02-kepanitiaan">HKP.02.04.02 - Kepanitiaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-04-03-kesejahteraan-pegawai"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-04-03-kesejahteraan-pegawai">HKP.02.04.03 - Kesejahteraan Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-04-04-kemahasiswaan"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-04-04-kemahasiswaan">HKP.02.04.04 - Kemahasiswaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-04-05-pendidikan"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-04-05-pendidikan">HKP.02.04.05 - Pendidikan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-02-04-06-kepegawaian"
+               title="http://sekar.ui.ac.id/index.php/hkp-02-04-06-kepegawaian">HKP.02.04.06 - Kepegawaian</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-03-instruksi-instruksi"
+               title="http://sekar.ui.ac.id/index.php/hkp-03-instruksi-instruksi">HKP.03 - Instruksi-instruksi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-03-00-instruksi-presiden"
+               title="http://sekar.ui.ac.id/index.php/hkp-03-00-instruksi-presiden">HKP.03.00 - Instruksi Presiden</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-03-01-instruksi-menteri"
+               title="http://sekar.ui.ac.id/index.php/hkp-03-01-instruksi-menteri">HKP.03.01 - Instruksi Menteri</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-03-02-instruksi-gubernur"
+               title="http://sekar.ui.ac.id/index.php/hkp-03-02-instruksi-gubernur">HKP.03.02 - Instruksi Gubernur</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-03-03-instruksi-universitas"
+               title="http://sekar.ui.ac.id/index.php/hkp-03-03-instruksi-universitas">HKP.03.03 - Instruksi Universitas</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-04-surat-edaran"
+               title="http://sekar.ui.ac.id/index.php/hkp-04-surat-edaran">HKP.04 - Surat Edaran</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-04-00-surat-edaran-presiden"
+               title="http://sekar.ui.ac.id/index.php/hkp-04-00-surat-edaran-presiden">HKP.04.00 - Surat Edaran Presiden</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-04-01-surat-edaran-menteri"
+               title="http://sekar.ui.ac.id/index.php/hkp-04-01-surat-edaran-menteri">HKP.04.01 - Surat Edaran Menteri</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-04-02-surat-edaran-gubernur"
+               title="http://sekar.ui.ac.id/index.php/hkp-04-02-surat-edaran-gubernur">HKP.04.02 - Surat Edaran Gubernur</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-04-03-surat-edaran-universitas"
+               title="http://sekar.ui.ac.id/index.php/hkp-04-03-surat-edaran-universitas">HKP.04.03 - Surat Edaran Universitas</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-04-04-surat-edaran-fakultas"
+               title="http://sekar.ui.ac.id/index.php/hkp-04-04-surat-edaran-fakultas">HKP.04.04 - Surat Edaran Fakultas</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-05-kerjasama"
+               title="http://sekar.ui.ac.id/index.php/hkp-05-kerjasama">HKP.05 - Kerjasama</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-05-00-perjanjian-kontrak-sewa"
+               title="http://sekar.ui.ac.id/index.php/hkp-05-00-perjanjian-kontrak-sewa">HKP.05.00 - Perjanjian/ Kontrak/ Sewa</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-06-pengawasan"
+               title="http://sekar.ui.ac.id/index.php/hkp-06-pengawasan">HKP.06 - Pengawasan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-06-00-pengawasan-internal"
+               title="http://sekar.ui.ac.id/index.php/hkp-06-00-pengawasan-internal">HKP.06.00 - Pengawasan Internal</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-06-01-pengawasan-eksternal"
+               title="http://sekar.ui.ac.id/index.php/hkp-06-01-pengawasan-eksternal">HKP.06.01 - Pengawasan Eksternal</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-07-pelanggaran"
+               title="http://sekar.ui.ac.id/index.php/hkp-07-pelanggaran">HKP.07 - Pelanggaran</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-07-00-akademik"
+               title="http://sekar.ui.ac.id/index.php/hkp-07-00-akademik">HKP.07.00 - Akademik</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-07-01-non-akademik"
+               title="http://sekar.ui.ac.id/index.php/hkp-07-01-non-akademik">HKP.07.01 - Non Akademik</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-07-02-kasus-pidana"
+               title="http://sekar.ui.ac.id/index.php/hkp-07-02-kasus-pidana">HKP.07.02 - Kasus Pidana</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hkp-07-03-kasus-perdata"
+               title="http://sekar.ui.ac.id/index.php/hkp-07-03-kasus-perdata">HKP.07.03 - Kasus Perdata</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-humas-dan-informatika"
+               title="http://sekar.ui.ac.id/index.php/hmi-humas-dan-informatika">HMI - Humas dan Informatika</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-00-humas-hubungan-masyarakat"
+               title="http://sekar.ui.ac.id/index.php/hmi-00-humas-hubungan-masyarakat">HMI.00 - Humas/ Hubungan Masyarakat</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-00-00-bakohumas"
+               title="http://sekar.ui.ac.id/index.php/hmi-00-00-bakohumas">HMI.00.00 - Bakohumas</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-01-pemberitaan"
+               title="http://sekar.ui.ac.id/index.php/hmi-01-pemberitaan">HMI.01 - Pemberitaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-01-00-radio" title="http://sekar.ui.ac.id/index.php/hmi-01-00-radio">HMI.01.00 - Radio</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-01-01-pers" title="http://sekar.ui.ac.id/index.php/hmi-01-01-pers">HMI.01.01 - Pers</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-01-02-televisi-tv"
+               title="http://sekar.ui.ac.id/index.php/hmi-01-02-televisi-tv">HMI.01.02 - Televisi (Tv)</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-01-03-internet"
+               title="http://sekar.ui.ac.id/index.php/hmi-01-03-internet">HMI.01.03 - Internet</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-02-pameran" title="http://sekar.ui.ac.id/index.php/hmi-02-pameran">HMI.02 - Pameran</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-02-00-pembangunan"
+               title="http://sekar.ui.ac.id/index.php/hmi-02-00-pembangunan">HMI.02.00 - Pembangunan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-02-01-pendidikan"
+               title="http://sekar.ui.ac.id/index.php/hmi-02-01-pendidikan">HMI.02.01 - Pendidikan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-02-02-mitra-kerja-partisipasi"
+               title="http://sekar.ui.ac.id/index.php/hmi-02-02-mitra-kerja-partisipasi">HMI.02.02 - Mitra Kerja/ Partisipasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-03-publikasi-penerbitan"
+               title="http://sekar.ui.ac.id/index.php/hmi-03-publikasi-penerbitan">HMI.03 - Publikasi/ Penerbitan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-03-00-majalah"
+               title="http://sekar.ui.ac.id/index.php/hmi-03-00-majalah">HMI.03.00 - Majalah</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-03-01-brosur"
+               title="http://sekar.ui.ac.id/index.php/hmi-03-01-brosur">HMI.03.01 - Brosur</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-03-02-sponsor"
+               title="http://sekar.ui.ac.id/index.php/hmi-03-02-sponsor">HMI.03.02 - Sponsor</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-04-informatika"
+               title="http://sekar.ui.ac.id/index.php/hmi-04-informatika">HMI.04 - Informatika</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-04-00-statistik"
+               title="http://sekar.ui.ac.id/index.php/hmi-04-00-statistik">HMI.04.00 - Statistik</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-04-01-pengumpulan-dan-pengolahan"
+               title="http://sekar.ui.ac.id/index.php/hmi-04-01-pengumpulan-dan-pengolahan">HMI.04.01 - Pengumpulan dan Pengolahan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-04-02-penyajian"
+               title="http://sekar.ui.ac.id/index.php/hmi-04-02-penyajian">HMI.04.02 - Penyajian</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-05-dokumentasi"
+               title="http://sekar.ui.ac.id/index.php/hmi-05-dokumentasi">HMI.05 - Dokumentasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-05-00-kliping"
+               title="http://sekar.ui.ac.id/index.php/hmi-05-00-kliping">HMI.05.00 - Kliping</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-05-01-foto" title="http://sekar.ui.ac.id/index.php/hmi-05-01-foto">HMI.05.01 - Foto</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/hmi-05-02-audio-visual"
+               title="http://sekar.ui.ac.id/index.php/hmi-05-02-audio-visual">HMI.05.02 - Audio Visual</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-keuangan" title="http://sekar.ui.ac.id/index.php/keu-keuangan">KEU - Keuangan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-00-rencana-anggaran-belanja"
+               title="http://sekar.ui.ac.id/index.php/keu-00-rencana-anggaran-belanja">KEU.00 - Rencana Anggaran Belanja</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-01-penerimaan"
+               title="http://sekar.ui.ac.id/index.php/keu-01-penerimaan">KEU.01 - Penerimaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-01-00-pendaftaran-mahasiswa-registrasi"
+               title="http://sekar.ui.ac.id/index.php/keu-01-00-pendaftaran-mahasiswa-registrasi">KEU.01.00 - Pendaftaran Mahasiswa/ Registrasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-01-01-uang-kuliah"
+               title="http://sekar.ui.ac.id/index.php/keu-01-01-uang-kuliah">KEU.01.01 - Uang Kuliah</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-01-02-uang-wisuda"
+               title="http://sekar.ui.ac.id/index.php/keu-01-02-uang-wisuda">KEU.01.02 - Uang Wisuda</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-01-03-sumber-lain"
+               title="http://sekar.ui.ac.id/index.php/keu-01-03-sumber-lain">KEU.01.03 - Sumber Lain</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-02-realisasi-anggaran"
+               title="http://sekar.ui.ac.id/index.php/keu-02-realisasi-anggaran">KEU.02 - Realisasi Anggaran</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-02-00-belanja-pegawai"
+               title="http://sekar.ui.ac.id/index.php/keu-02-00-belanja-pegawai">KEU.02.00 - Belanja Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-02-01-belanja-perjalanan"
+               title="http://sekar.ui.ac.id/index.php/keu-02-01-belanja-perjalanan">KEU.02.01 - Belanja Perjalanan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-02-01-00-operasional-bidang-akademik"
+               title="http://sekar.ui.ac.id/index.php/keu-02-01-00-operasional-bidang-akademik">KEU.02.01.00 - Operasional Bidang Akademik</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-02-01-01-operasional-bidang-penelitian"
+               title="http://sekar.ui.ac.id/index.php/keu-02-01-01-operasional-bidang-penelitian">KEU.02.01.01 - Operasional Bidang Penelitian</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-02-01-02-operasional-bidang-penelitian"
+               title="http://sekar.ui.ac.id/index.php/keu-02-01-02-operasional-bidang-penelitian">KEU.02.01.02 - Operasional Bidang Pengabdian</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-02-01-03-operasional-bidang-kemahasiswaan"
+               title="http://sekar.ui.ac.id/index.php/keu-02-01-03-operasional-bidang-kemahasiswaan">KEU.02.01.03 - Operasional BIdang Kemahasiswaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-02-03-belanja-pemeliharaan"
+               title="http://sekar.ui.ac.id/index.php/keu-02-03-belanja-pemeliharaan">KEU.02.03 - Belanja Pemeliharaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-02-04-pengeluaran-pembangunan"
+               title="http://sekar.ui.ac.id/index.php/keu-02-04-pengeluaran-pembangunan">KEU.02.04 - Pengeluaran Pembangunan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-02-04-00-pemeliharaan-sarana"
+               title="http://sekar.ui.ac.id/index.php/keu-02-04-00-pemeliharaan-sarana">KEU.02.04.00 - Pemeliharaan Sarana</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-02-04-01-pajak"
+               title="http://sekar.ui.ac.id/index.php/keu-02-04-01-pajak">KEU.02.04.01 - Pajak</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-03-laporan-keuangan"
+               title="http://sekar.ui.ac.id/index.php/keu-03-laporan-keuangan">KEU.03 - Laporan Keuangan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/keu-02-02-belanja-barang"
+               title="http://sekar.ui.ac.id/index.php/keu-02-02-belanja-barang">KEu.02.02 - Belanja Barang</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-logistik" title="http://sekar.ui.ac.id/index.php/log-logistik">LOG - Logistik</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-00-perencanaan-analisa-kebutuhan"
+               title="http://sekar.ui.ac.id/index.php/log-00-perencanaan-analisa-kebutuhan">LOG.00 - Perencanaan/ Analisa Kebutuhan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-01-pengadaan"
+               title="http://sekar.ui.ac.id/index.php/log-01-pengadaan">LOG.01 - Pengadaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-01-00-barang-bergerak"
+               title="http://sekar.ui.ac.id/index.php/log-01-00-barang-bergerak">LOG.01.00 - Barang Bergerak</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-01-00-00-perabot-kantor"
+               title="http://sekar.ui.ac.id/index.php/log-01-00-00-perabot-kantor">LOG.01.00.00 - Perabot Kantor</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-01-00-01-komputer"
+               title="http://sekar.ui.ac.id/index.php/log-01-00-01-komputer">LOG.01.00.01 - Komputer</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-01-00-02-kendaraan"
+               title="http://sekar.ui.ac.id/index.php/log-01-00-02-kendaraan">LOG.01.00.02 - Kendaraan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-01-00-03-mesin-kantor"
+               title="http://sekar.ui.ac.id/index.php/log-01-00-03-mesin-kantor">LOG.01.00.03 - Mesin Kantor</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-01-00-04-alat-tulis-kantor-atk"
+               title="http://sekar.ui.ac.id/index.php/log-01-00-04-alat-tulis-kantor-atk">LOG.01.00.04 - Alat Tulis Kantor (ATK)</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-01-00-05-peralatan-lainnya"
+               title="http://sekar.ui.ac.id/index.php/log-01-00-05-peralatan-lainnya">LOG.01.00.05 - Peralatan Lainnya</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-01-00-06-cetakan"
+               title="http://sekar.ui.ac.id/index.php/log-01-00-06-cetakan">LOG.01.00.06 - Cetakan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-01-01-barang-tidak-bergerak"
+               title="http://sekar.ui.ac.id/index.php/log-01-01-barang-tidak-bergerak">LOG.01.01 - Barang Tidak Bergerak</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-01-01-00-tanah"
+               title="http://sekar.ui.ac.id/index.php/log-01-01-00-tanah">LOG.01.01.00 - Tanah</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-01-01-01-bangunan"
+               title="http://sekar.ui.ac.id/index.php/log-01-01-01-bangunan">LOG.01.01.01 - Bangunan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-02-distribusi"
+               title="http://sekar.ui.ac.id/index.php/log-02-distribusi">LOG.02 - Distribusi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-02-00-barang-bergerak"
+               title="http://sekar.ui.ac.id/index.php/log-02-00-barang-bergerak">LOG.02.00 - Barang Bergerak</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-02-01-cetakan"
+               title="http://sekar.ui.ac.id/index.php/log-02-01-cetakan">LOG.02.01 - Cetakan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-03-inventarisasi-barang"
+               title="http://sekar.ui.ac.id/index.php/log-03-inventarisasi-barang">LOG.03 - Inventarisasi Barang</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-03-00-barang-bergerak"
+               title="http://sekar.ui.ac.id/index.php/log-03-00-barang-bergerak">LOG.03.00 - Barang Bergerak</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-03-01-barang-tidak-bergerak"
+               title="http://sekar.ui.ac.id/index.php/log-03-01-barang-tidak-bergerak">LOG.03.01 - Barang Tidak Bergerak</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-04-penghapusan-penyusutan"
+               title="http://sekar.ui.ac.id/index.php/log-04-penghapusan-penyusutan">LOG.04 - Penghapusan/ Penyusutan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-04-00-barang-bergerak"
+               title="http://sekar.ui.ac.id/index.php/log-04-00-barang-bergerak">LOG.04.00 - Barang Bergerak</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/log-04-01-barang-tidak-bergerak"
+               title="http://sekar.ui.ac.id/index.php/log-04-01-barang-tidak-bergerak">LOG.04.01 - Barang Tidak Bergerak</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-organisasi-dan-tata-laksana"
+               title="http://sekar.ui.ac.id/index.php/otl-organisasi-dan-tata-laksana">OTL - Organisasi dan Tata Laksana</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-00-organisasi"
+               title="http://sekar.ui.ac.id/index.php/otl-00-organisasi">OTL.00 - Organisasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-00-00-pembentukan"
+               title="http://sekar.ui.ac.id/index.php/otl-00-00-pembentukan">OTL.00.00 - Pembentukan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-00-01-perubahan"
+               title="http://sekar.ui.ac.id/index.php/otl-00-01-perubahan">OTL.00.01 - Perubahan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-00-03-penghapusan"
+               title="http://sekar.ui.ac.id/index.php/otl-00-03-penghapusan">OTL.00.03 - Penghapusan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-01-rencana-induk-pengembangan"
+               title="http://sekar.ui.ac.id/index.php/otl-01-rencana-induk-pengembangan">OTL.01 - Rencana Induk Pengembangan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-02-akreditasi"
+               title="http://sekar.ui.ac.id/index.php/otl-02-akreditasi">OTL.02 - Akreditasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-03-tata-laksana"
+               title="http://sekar.ui.ac.id/index.php/otl-03-tata-laksana">OTL.03 - Tata Laksana</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-03-00-pembakuan-sistem"
+               title="http://sekar.ui.ac.id/index.php/otl-03-00-pembakuan-sistem">OTL.03.00 - Pembakuan Sistem</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-03-01-program-kerja"
+               title="http://sekar.ui.ac.id/index.php/otl-03-01-program-kerja">OTL.03.01 - Program Kerja</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-03-02-standarisasi"
+               title="http://sekar.ui.ac.id/index.php/otl-03-02-standarisasi">OTL.03.02 - Standarisasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-03-03-tata-ruang-layout"
+               title="http://sekar.ui.ac.id/index.php/otl-03-03-tata-ruang-layout">OTL.03.03 - Tata Ruang/ Layout</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-04-protokol" title="http://sekar.ui.ac.id/index.php/otl-04-protokol">OTL.04 - Protokol</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-04-00-upacara-acara"
+               title="http://sekar.ui.ac.id/index.php/otl-04-00-upacara-acara">OTL.04.00 - Upacara/ Acara</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-04-01-kunjungan"
+               title="http://sekar.ui.ac.id/index.php/otl-04-01-kunjungan">OTL.04.01 - Kunjungan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-05-tata-persuratan"
+               title="http://sekar.ui.ac.id/index.php/otl-05-tata-persuratan">OTL.05 - Tata Persuratan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-06-pengurusan-surat"
+               title="http://sekar.ui.ac.id/index.php/otl-06-pengurusan-surat">OTL.06 - Pengurusan Surat</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-06-00-buku-agenda"
+               title="http://sekar.ui.ac.id/index.php/otl-06-00-buku-agenda">OTL.06.00 - Buku Agenda</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-06-01-lembar-surat-pengantar"
+               title="http://sekar.ui.ac.id/index.php/otl-06-01-lembar-surat-pengantar">OTL.06.01 - Lembar Surat Pengantar</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-06-02-formulir"
+               title="http://sekar.ui.ac.id/index.php/otl-06-02-formulir">OTL.06.02 - Formulir</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-07-penggandaan"
+               title="http://sekar.ui.ac.id/index.php/otl-07-penggandaan">OTL.07 - Penggandaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-08-pusat-rekod"
+               title="http://sekar.ui.ac.id/index.php/otl-08-pusat-rekod">OTL.08 - Pusat Rekod</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-08-00-pemindahan-rekod-ke-pusat-rekod"
+               title="http://sekar.ui.ac.id/index.php/otl-08-00-pemindahan-rekod-ke-pusat-rekod">OTL.08.00 - Pemindahan Rekod ke Pusat Rekod</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-08-01-peminjaman-rekod"
+               title="http://sekar.ui.ac.id/index.php/otl-08-01-peminjaman-rekod">OTL.08.01 - Peminjaman Rekod</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-08-02-penyusutan-pemusnahan"
+               title="http://sekar.ui.ac.id/index.php/otl-08-02-penyusutan-pemusnahan">OTL.08.02 - Penyusutan/ Pemusnahan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/otl-08-03-pembinaan"
+               title="http://sekar.ui.ac.id/index.php/otl-08-03-pembinaan">OTL.08.03 - Pembinaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pendidikan-dan-pengajaran-2"
+               title="http://sekar.ui.ac.id/index.php/pendidikan-dan-pengajaran-2">PDP - Pendidikan dan Pengajaran</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/kegiatan-perkuliahan"
+               title="http://sekar.ui.ac.id/index.php/kegiatan-perkuliahan">PDP.00 - Kemahasiswaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/kepanitiaan" title="http://sekar.ui.ac.id/index.php/kepanitiaan">PDP.00.00 - Kepanitiaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/seleksi-mahasiswa"
+               title="http://sekar.ui.ac.id/index.php/seleksi-mahasiswa">PDP.00.01 - Seleksi Mahasiswa</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-01-00-pelaksanaan-penerimaan-mahasiswa"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-01-00-pelaksanaan-penerimaan-mahasiswa">PDP.00.01.00 - Pelaksanaan Penerimaan Mahasiswa</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-01-02-hasil-seleksi"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-01-02-hasil-seleksi">PDP.00.01.02 - Hasil Seleksi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-01-03-naskah-soal-ujian"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-01-03-naskah-soal-ujian">PDP.00.01.03 - Naskah Soal Ujian</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/registrasi-mahasiswa"
+               title="http://sekar.ui.ac.id/index.php/registrasi-mahasiswa">PDP.00.02 - Registrasi Mahasiswa</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/mutasi-mahasiswa"
+               title="http://sekar.ui.ac.id/index.php/mutasi-mahasiswa">PDP.00.03 - Mutasi Mahasiswa</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/kegiatan-ekstrakulikuler"
+               title="http://sekar.ui.ac.id/index.php/kegiatan-ekstrakulikuler">PDP.00.04 - Kegiatan Ekstrakulikuler</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-04-00-organisasi-kemahasiswaan"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-04-00-organisasi-kemahasiswaan">PDP.00.04.00 - Organisasi Kemahasiswaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-04-01-mahasiswa-teladan"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-04-01-mahasiswa-teladan">PDP.00.04.01 - Mahasiswa Teladan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-04-02-karya-tulis-ilmiah"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-04-02-karya-tulis-ilmiah">PDP.00.04.02 - Karya Tulis Ilmiah</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-04-03-pelatihan"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-04-03-pelatihan">PDP.00.04.03 - Pelatihan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-04-04-studi-banding"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-04-04-studi-banding">PDP.00.04.04 - Studi Banding</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-04-05-bakat-minat"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-04-05-bakat-minat">PDP.00.04.05 - Bakat/ Minat</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/kesejahteraan-dan-fasilitas"
+               title="http://sekar.ui.ac.id/index.php/kesejahteraan-dan-fasilitas">PDP.00.05 - Kesejahteraan dan Fasilitas</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-05-00-beasiswa"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-05-00-beasiswa">PDP.00.05.00 - Beasiswa</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-05-01-keringanan"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-05-01-keringanan">PDP.00.05.01 - Keringanan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-05-02-bimbingan-dan-konseling"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-05-02-bimbingan-dan-konseling">PDP.00.05.02 - Bimbingan dan Konseling</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-05-04-fasilitas"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-05-04-fasilitas">PDP.00.05.04 - Fasilitas</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/data-dan-alumni" title="http://sekar.ui.ac.id/index.php/data-dan-alumni">PDP.00.06 - Data dan Alumni PDP.00.06 - Data dan Alumni</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-06-00-data-alumni"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-06-00-data-alumni">PDP.00.06.00 - Data Alumni</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-06-01-persatuan-orang-tua-mahasiswa-pom"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-06-01-persatuan-orang-tua-mahasiswa-pom">PDP.00.06.01 - Persatuan Orang Tua Mahasiswa (POM)</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/penyerahan-ijasah-sertifikat"
+               title="http://sekar.ui.ac.id/index.php/penyerahan-ijasah-sertifikat">PDP.00.07 - Penyerahan Ijasah/ Sertifikat</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-07-00-upacara-wisuda"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-07-00-upacara-wisuda">PDP.00.07.00 - Upacara Wisuda</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-07-01-ijasah-sertifikat"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-07-01-ijasah-sertifikat">PDP.00.07.01 - Ijasah/ Sertifikat</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/kemahasiswaan" title="http://sekar.ui.ac.id/index.php/kemahasiswaan">PDP.01 - Kegiatan Perkuliahan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-01-00-daftar-hadir-absen"
+               title="http://sekar.ui.ac.id/index.php/pdp-01-00-daftar-hadir-absen">PDP.01.00 - Daftar Hadir/ Absen</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-01-01-kalender-akademik-jadwal"
+               title="http://sekar.ui.ac.id/index.php/pdp-01-01-kalender-akademik-jadwal">PDP.01.01 - Kalender Akademik/ Jadwal</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-01-02-daftar-nilai-ujian"
+               title="http://sekar.ui.ac.id/index.php/pdp-01-02-daftar-nilai-ujian">PDP.01.02 - Daftar Nilai Ujian</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-01-03-daftar-nilai-semester"
+               title="http://sekar.ui.ac.id/index.php/pdp-01-03-daftar-nilai-semester">PDP.01.03 - Daftar Nilai Semester</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-01-04-transkrip"
+               title="http://sekar.ui.ac.id/index.php/pdp-01-04-transkrip">PDP.01.04 - Transkrip</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-01-05-status-mahasiswa"
+               title="http://sekar.ui.ac.id/index.php/pdp-01-05-status-mahasiswa">PDP.01.05 - Status Mahasiswa</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-01-05-00-cuti-kuliah"
+               title="http://sekar.ui.ac.id/index.php/pdp-01-05-00-cuti-kuliah">PDP.01.05.00 - Cuti Kuliah</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-01-05-01-berhenti-kuliah"
+               title="http://sekar.ui.ac.id/index.php/pdp-01-05-01-berhenti-kuliah">PDP.01.05.01 - Berhenti Kuliah</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-01-05-02-pernyataan-masih-kuliah"
+               title="http://sekar.ui.ac.id/index.php/pdp-01-05-02-pernyataan-masih-kuliah">PDP.01.05.02 - Pernyataan Masih Kuliah</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sarana-perkuliahan"
+               title="http://sekar.ui.ac.id/index.php/sarana-perkuliahan">PDP.02 - Sarana Perkuliahan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-02-00-laboratorium"
+               title="http://sekar.ui.ac.id/index.php/pdp-02-00-laboratorium">PDP.02.00 - Laboratorium</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-02-01-perpustakaan"
+               title="http://sekar.ui.ac.id/index.php/pdp-02-01-perpustakaan">PDP.02.01 - Perpustakaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-02-01-00-pengembangan-koleksi"
+               title="http://sekar.ui.ac.id/index.php/pdp-02-01-00-pengembangan-koleksi">PDP.02.01.00 - Pengembangan Koleksi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-02-01-01-pengolahan"
+               title="http://sekar.ui.ac.id/index.php/pdp-02-01-01-pengolahan">PDP.02.01.01 - Pengolahan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-02-01-02-pelayanan"
+               title="http://sekar.ui.ac.id/index.php/pdp-02-01-02-pelayanan">PDP.02.01.02 - Pelayanan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-02-01-03-kerjasama"
+               title="http://sekar.ui.ac.id/index.php/pdp-02-01-03-kerjasama">PDP.02.01.03 - Kerjasama</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pengembangan-kurikulum"
+               title="http://sekar.ui.ac.id/index.php/pengembangan-kurikulum">PDP.03 - Pengembangan Kurikulum</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-03-00-silabus"
+               title="http://sekar.ui.ac.id/index.php/pdp-03-00-silabus">PDP.03.00 - Silabus</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-03-00-00-satuan-acara-perkuliahan-sap"
+               title="http://sekar.ui.ac.id/index.php/pdp-03-00-00-satuan-acara-perkuliahan-sap">PDP.03.00.00 - Satuan Acara Perkuliahan (SAP)</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-03-00-01-evaluasi-kurikulum"
+               title="http://sekar.ui.ac.id/index.php/pdp-03-00-01-evaluasi-kurikulum">PDP.03.00.01 - Evaluasi Kurikulum</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-03-01-buku-ajar"
+               title="http://sekar.ui.ac.id/index.php/pdp-03-01-buku-ajar">PDP.03.01 - Buku Ajar</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/tugas-akhir" title="http://sekar.ui.ac.id/index.php/tugas-akhir">PDP.04 - Tugas Akhir</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-04-00-praktik-kerja-lapangan"
+               title="http://sekar.ui.ac.id/index.php/pdp-04-00-praktik-kerja-lapangan">PDP.04.00 - Praktik Kerja Lapangan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-04-01-skripsi"
+               title="http://sekar.ui.ac.id/index.php/pdp-04-01-skripsi">PDP.04.01 - Skripsi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-04-02-tesis-disertasi"
+               title="http://sekar.ui.ac.id/index.php/pdp-04-02-tesis-disertasi">PDP.04.02 - Tesis/ Disertasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-04-03-program-khusus"
+               title="http://sekar.ui.ac.id/index.php/pdp-04-03-program-khusus">PDP.04.03 - Program Khusus</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/pdp-00-05-03-bursa-kerja"
+               title="http://sekar.ui.ac.id/index.php/pdp-00-05-03-bursa-kerja">PDp.00.05.03 - Bursa Kerja</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/ppm-penelitian-dan-pengabdian-masyarakat"
+               title="http://sekar.ui.ac.id/index.php/ppm-penelitian-dan-pengabdian-masyarakat">PPM - Penelitian dan Pengabdian Masyarakat</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/ppm-00-penelitian"
+               title="http://sekar.ui.ac.id/index.php/ppm-00-penelitian">PPM.00 - Penelitian</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/ppm-00-00-usulan-penelitian"
+               title="http://sekar.ui.ac.id/index.php/ppm-00-00-usulan-penelitian">PPM.00.00 - Usulan Penelitian</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/ppm-00-01-sumber-pendanaan"
+               title="http://sekar.ui.ac.id/index.php/ppm-00-01-sumber-pendanaan">PPM.00.01 - Sumber Pendanaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/ppm-00-02-pelaksanaan-penelitian"
+               title="http://sekar.ui.ac.id/index.php/ppm-00-02-pelaksanaan-penelitian">PPM.00.02 - Pelaksanaan Penelitian</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/ppm-00-03-laporan"
+               title="http://sekar.ui.ac.id/index.php/ppm-00-03-laporan">PPM.00.03 - Laporan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/ppm-00-04-publikasi"
+               title="http://sekar.ui.ac.id/index.php/ppm-00-04-publikasi">PPM.00.04 - Publikasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/ppm-01-pengabdian-pelayanan-pada-masyarakat"
+               title="http://sekar.ui.ac.id/index.php/ppm-01-pengabdian-pelayanan-pada-masyarakat">PPM.01 - Pengabdian/ Pelayanan pada Masyarakat</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/ppm-01-00-kelembagaan"
+               title="http://sekar.ui.ac.id/index.php/ppm-01-00-kelembagaan">PPM.01.00 - Kelembagaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/ppm-01-01-pelatihan-seminar"
+               title="http://sekar.ui.ac.id/index.php/ppm-01-01-pelatihan-seminar">PPM.01.01 - Pelatihan/ Seminar</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/ppm-01-02-konsultasi"
+               title="http://sekar.ui.ac.id/index.php/ppm-01-02-konsultasi">PPM.01.02 - Konsultasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/ppm-01-03-penyuluhan"
+               title="http://sekar.ui.ac.id/index.php/ppm-01-03-penyuluhan">PPM.01.03 - Penyuluhan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/ppm-01-04-kerjasama"
+               title="http://sekar.ui.ac.id/index.php/ppm-01-04-kerjasama">PPM.01.04 - Kerjasama</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/ppm-01-05-bantuan-sosial"
+               title="http://sekar.ui.ac.id/index.php/ppm-01-05-bantuan-sosial">PPM.01.05 - Bantuan Sosial</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#pakar" title="https://arsip.ui.ac.id/ontology/pakar">Pakar</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-rumah-tangga-kantor"
+               title="http://sekar.ui.ac.id/index.php/rtk-rumah-tangga-kantor">RTK - Rumah Tangga Kantor</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-00-penggunaan-sarana-kantor"
+               title="http://sekar.ui.ac.id/index.php/rtk-00-penggunaan-sarana-kantor">RTK.00 - Penggunaan Sarana Kantor</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-01-pemeliharaan-sarana-kantor"
+               title="http://sekar.ui.ac.id/index.php/rtk-01-pemeliharaan-sarana-kantor">RTK.01 - Pemeliharaan Sarana Kantor</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-01-00-tanah" title="http://sekar.ui.ac.id/index.php/rtk-01-00-tanah">RTK.01.00 - Tanah</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-01-01-bangunan"
+               title="http://sekar.ui.ac.id/index.php/rtk-01-01-bangunan">RTK.01.01 - Bangunan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-01-02-perabotan"
+               title="http://sekar.ui.ac.id/index.php/rtk-01-02-perabotan">RTK.01.02 - Perabotan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-01-03-kendaraan"
+               title="http://sekar.ui.ac.id/index.php/rtk-01-03-kendaraan">RTK.01.03 - Kendaraan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-01-04-mesin-kantor"
+               title="http://sekar.ui.ac.id/index.php/rtk-01-04-mesin-kantor">RTK.01.04 - Mesin Kantor</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-01-05-peralatan-lainnya"
+               title="http://sekar.ui.ac.id/index.php/rtk-01-05-peralatan-lainnya">RTK.01.05 - Peralatan Lainnya</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-01-06-kebersihan-dan-pertamanan"
+               title="http://sekar.ui.ac.id/index.php/rtk-01-06-kebersihan-dan-pertamanan">RTK.01.06 - Kebersihan dan Pertamanan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-01-07-keamanan-dan-ketertiban"
+               title="http://sekar.ui.ac.id/index.php/rtk-01-07-keamanan-dan-ketertiban">RTK.01.07 - Keamanan dan Ketertiban</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-01-08-pelayanan-fasilitas-kantor"
+               title="http://sekar.ui.ac.id/index.php/rtk-01-08-pelayanan-fasilitas-kantor">RTK.01.08 - Pelayanan/ Fasilitas Kantor</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-02-pengelolaan-kantin"
+               title="http://sekar.ui.ac.id/index.php/rtk-02-pengelolaan-kantin">RTK.02 - Pengelolaan Kantin</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-03-pengelolaan-koperasi"
+               title="http://sekar.ui.ac.id/index.php/rtk-03-pengelolaan-koperasi">RTK.03 - Pengelolaan Koperasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/rtk-04-pengelolaan-mushola"
+               title="http://sekar.ui.ac.id/index.php/rtk-04-pengelolaan-mushola">RTK.04 - Pengelolaan Mushola</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-sumber-daya-manusia"
+               title="http://sekar.ui.ac.id/index.php/sdm-sumber-daya-manusia">SDM - Sumber Daya Manusia</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-00-pengabdian-pegawai"
+               title="http://sekar.ui.ac.id/index.php/sdm-00-pengabdian-pegawai">SDM.00 - Pengabdian Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-00-00-analisa-perencanaan-kebutuhan"
+               title="http://sekar.ui.ac.id/index.php/sdm-00-00-analisa-perencanaan-kebutuhan">SDM.00.00 - Analisa/ Perencanaan Kebutuhan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-00-01-penerimaan"
+               title="http://sekar.ui.ac.id/index.php/sdm-00-01-penerimaan">SDM.00.01 - Penerimaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-00-02-pengangkatan"
+               title="http://sekar.ui.ac.id/index.php/sdm-00-02-pengangkatan">SDM.00.02 - Pengangkatan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-01-mutasi" title="http://sekar.ui.ac.id/index.php/sdm-01-mutasi">SDM.01 - Mutasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-01-00-kepangkatan"
+               title="http://sekar.ui.ac.id/index.php/sdm-01-00-kepangkatan">SDM.01.00 - Kepangkatan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-01-01-jabatan"
+               title="http://sekar.ui.ac.id/index.php/sdm-01-01-jabatan">SDM.01.01 - Jabatan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-01-02-pemindahan"
+               title="http://sekar.ui.ac.id/index.php/sdm-01-02-pemindahan">SDM.01.02 - Pemindahan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-01-03-pemindahan-sementara"
+               title="http://sekar.ui.ac.id/index.php/sdm-01-03-pemindahan-sementara">SDM.01.03 - Pemindahan Sementara</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-pembinaan"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-pembinaan">SDM.02 - Pembinaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-00-peninjauan-masa-kerja"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-00-peninjauan-masa-kerja">SDM.02.00 - Peninjauan Masa Kerja</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-01-disiplin-pegawai"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-01-disiplin-pegawai">SDM.02.01 - Disiplin Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-02-penilaian-penetapan-angka-kredit"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-02-penilaian-penetapan-angka-kredit">SDM.02.02 - Penilaian/ Penetapan Angka Kredit</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-03-daftar-penilaian-pekerjaan-dp3"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-03-daftar-penilaian-pekerjaan-dp3">SDM.02.03 - Daftar Penilaian Pekerjaan (DP3)</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-04-tugas-belajar-magang-diklat-kursus"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-04-tugas-belajar-magang-diklat-kursus">SDM.02.04 - Tugas Belajar/ Magang/ Diklat/ Kursus</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-04-00-tugas-belajar-program-diploma"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-04-00-tugas-belajar-program-diploma">SDM.02.04.00 - Tugas Belajar Program Diploma</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-04-01-tugas-belajar-program-strata"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-04-01-tugas-belajar-program-strata">SDM.02.04.01 - Tugas Belajar Program Strata</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-04-02-diklat-persiapan-kerja-dpk"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-04-02-diklat-persiapan-kerja-dpk">SDM.02.04.02 - Diklat Persiapan Kerja (DPK)</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-04-03-diklat-penyesuaian-tugas-dpt"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-04-03-diklat-penyesuaian-tugas-dpt">SDM.02.04.03 - Diklat Penyesuaian Tugas (DPT)</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-04-04-diklat-kenaikan-golongan-dkg"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-04-04-diklat-kenaikan-golongan-dkg">SDM.02.04.04 - Diklat Kenaikan Golongan (DKG)</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-04-05-diklat-penyesuaian-ijazah-dpi"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-04-05-diklat-penyesuaian-ijazah-dpi">SDM.02.04.05 - Diklat Penyesuaian Ijazah (DPI)</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-04-06-diklat-manajemen"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-04-06-diklat-manajemen">SDM.02.04.06 - Diklat Manajemen</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-04-07-diklat-komputer"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-04-07-diklat-komputer">SDM.02.04.07 - Diklat Komputer</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-04-08-kursus-pelatihan"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-04-08-kursus-pelatihan">SDM.02.04.08 - Kursus/ Pelatihan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-04-09-studi-banding"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-04-09-studi-banding">SDM.02.04.09 - Studi Banding</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-04-10-seminar-konferensi-lokakarya-symposium"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-04-10-seminar-konferensi-lokakarya-symposium">SDM.02.04.10 - Seminar/ Konferensi/ Lokakarya/ Symposium</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-04-11-penataran"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-04-11-penataran">SDM.02.04.11 - Penataran</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-05-ujian-dinas-pegawai"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-05-ujian-dinas-pegawai">SDM.02.05 - Ujian Dinas Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-06-kesempatan-pendidikan-sekolah-di-luar-jam-kerja"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-06-kesempatan-pendidikan-sekolah-di-luar-jam-kerja">SDM.02.06 - Kesempatan Pendidikan/ Sekolah di Luar Jam Kerja</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-07-daftar-urut-kepangkatan"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-07-daftar-urut-kepangkatan">SDM.02.07 - Daftar Urut Kepangkatan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-08-sanksi-hukuman"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-08-sanksi-hukuman">SDM.02.08 - Sanksi/ Hukuman</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-09-rehabilitasi"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-09-rehabilitasi">SDM.02.09 - Rehabilitasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-02-10-penghargaan-pegawai"
+               title="http://sekar.ui.ac.id/index.php/sdm-02-10-penghargaan-pegawai">SDM.02.10 - Penghargaan Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-03-kesejahteraan"
+               title="http://sekar.ui.ac.id/index.php/sdm-03-kesejahteraan">SDM.03 - Kesejahteraan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-03-00-cuti" title="http://sekar.ui.ac.id/index.php/sdm-03-00-cuti">SDM.03.00 - Cuti</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-03-00-00-izin-pegawai"
+               title="http://sekar.ui.ac.id/index.php/sdm-03-00-00-izin-pegawai">SDM.03.00.00 - Izin Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-03-01-tabungan-perumahan"
+               title="http://sekar.ui.ac.id/index.php/sdm-03-01-tabungan-perumahan">SDM.03.01 - Tabungan Perumahan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-03-02-asuransi-pegawai"
+               title="http://sekar.ui.ac.id/index.php/sdm-03-02-asuransi-pegawai">SDM.03.02 - Asuransi Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-03-03-kesehatan-pegawai"
+               title="http://sekar.ui.ac.id/index.php/sdm-03-03-kesehatan-pegawai">SDM.03.03 - Kesehatan Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-03-04-bantuan-sosial"
+               title="http://sekar.ui.ac.id/index.php/sdm-03-04-bantuan-sosial">SDM.03.04 - Bantuan Sosial</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-04-penghasilan-pegawai"
+               title="http://sekar.ui.ac.id/index.php/sdm-04-penghasilan-pegawai">SDM.04 - Penghasilan Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-04-00-gaji" title="http://sekar.ui.ac.id/index.php/sdm-04-00-gaji">SDM.04.00 - Gaji</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-04-01-tunjangan"
+               title="http://sekar.ui.ac.id/index.php/sdm-04-01-tunjangan">SDM.04.01 - Tunjangan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-04-02-lembur"
+               title="http://sekar.ui.ac.id/index.php/sdm-04-02-lembur">SDM.04.02 - Lembur</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-04-03-gaji-berkala"
+               title="http://sekar.ui.ac.id/index.php/sdm-04-03-gaji-berkala">SDM.04.03 - Gaji Berkala</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-04-04-penyesuaian-tunjangan-keluarga"
+               title="http://sekar.ui.ac.id/index.php/sdm-04-04-penyesuaian-tunjangan-keluarga">SDM.04.04 - Penyesuaian Tunjangan Keluarga</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-05-administrasi-pegawai"
+               title="http://sekar.ui.ac.id/index.php/sdm-05-administrasi-pegawai">SDM.05 - Administrasi Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-05-00-perjalanan-dinas"
+               title="http://sekar.ui.ac.id/index.php/sdm-05-00-perjalanan-dinas">SDM.05.00 - Perjalanan Dinas</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-05-01-kartu-pegawai"
+               title="http://sekar.ui.ac.id/index.php/sdm-05-01-kartu-pegawai">SDM.05.01 - Kartu Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-05-02-identitas-pegawai"
+               title="http://sekar.ui.ac.id/index.php/sdm-05-02-identitas-pegawai">SDM.05.02 - Identitas Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-05-03-keanggotaan-organisasi"
+               title="http://sekar.ui.ac.id/index.php/sdm-05-03-keanggotaan-organisasi">SDM.05.03 - Keanggotaan Organisasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-05-04-keanggotaan-partai-politik"
+               title="http://sekar.ui.ac.id/index.php/sdm-05-04-keanggotaan-partai-politik">SDM.05.04 - Keanggotaan Partai Politik</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-05-05-laporan-pemberitahuan-pajak-penghasilan"
+               title="http://sekar.ui.ac.id/index.php/sdm-05-05-laporan-pemberitahuan-pajak-penghasilan">SDM.05.05 - Laporan Pemberitahuan Pajak Penghasilan</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-06-pemberhentian-pegawai"
+               title="http://sekar.ui.ac.id/index.php/sdm-06-pemberhentian-pegawai">SDM.06 - Pemberhentian Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-06-00-atas-permintaan-sendiri"
+               title="http://sekar.ui.ac.id/index.php/sdm-06-00-atas-permintaan-sendiri">SDM.06.00 - Atas Permintaan Sendiri</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-06-01-tidak-atas-permintaan-sendiri"
+               title="http://sekar.ui.ac.id/index.php/sdm-06-01-tidak-atas-permintaan-sendiri">SDM.06.01 - Tidak Atas Permintaan Sendiri</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-06-02-pensiun"
+               title="http://sekar.ui.ac.id/index.php/sdm-06-02-pensiun">SDM.06.02 - Pensiun</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-06-03-wafat" title="http://sekar.ui.ac.id/index.php/sdm-06-03-wafat">SDM.06.03 - Wafat</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/sdm-07-personil-file-pegawai"
+               title="http://sekar.ui.ac.id/index.php/sdm-07-personil-file-pegawai">SDM.07 - Personil File Pegawai</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/klasifikasi-universitas-indonesia"
+               title="http://sekar.ui.ac.id/index.php/klasifikasi-universitas-indonesia">SKEMA KLASIFIKASI ARSIP UNIVERSITAS INDONESIA</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+      <h3>
+         <sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#ConceptScheme</p>
+      <div class="comment">
+         <span class="markdown"/>
+      </div>
+      <dl class="description">
+         <dt>has members</dt>
+         <dd>
+            <a href="#kepakaran" title="https://arsip.ui.ac.id/ontology/kepakaran">Kepakaran</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://sekar.ui.ac.id/index.php/subjects" title="http://sekar.ui.ac.id/index.php/subjects">subjects</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Activity">
+      <h3>Activity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Activity</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Event" title="https://arsip.ui.ac.id/ontology/Event">Event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Agent">
+      <h3>Agent<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Agent</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Unit_Group" title="https://arsip.ui.ac.id/ontology/Unit_Group">Group</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Organization" title="https://arsip.ui.ac.id/ontology/Organization">Organization</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Person" title="https://arsip.ui.ac.id/ontology/Person">Person</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Position" title="https://arsip.ui.ac.id/ontology/Position">Position</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasAward" title="https://arsip.ui.ac.id/ontology/hasAward">hasAward</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#legalStatus" title="https://arsip.ui.ac.id/ontology/legalStatus">legalStatus</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#performe" title="https://arsip.ui.ac.id/ontology/performe">performe</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#createBy" title="https://arsip.ui.ac.id/ontology/createBy">createBy</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#described" title="https://arsip.ui.ac.id/ontology/described">described</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#performedBy" title="https://arsip.ui.ac.id/ontology/performedBy">performed by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Archives_Type">
+      <h3>Archives Type<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Archives_Type</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasArchivesType" title="https://arsip.ui.ac.id/ontology/hasArchivesType">has archives type</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Vital" title="https://arsip.ui.ac.id/ontology/Vital">Arsip Vital</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BorangAkreditasi"
+               title="https://arsip.ui.ac.id/ontology/BorangAkreditasi">Borang Akreditasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#HAKI" title="https://arsip.ui.ac.id/ontology/HAKI">HAKI</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SertifikatAkreditasi"
+               title="https://arsip.ui.ac.id/ontology/SertifikatAkreditasi">Sertifikat Akreditasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Asset">
+      <h3>Asset<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Asset</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Building" title="https://arsip.ui.ac.id/ontology/Building">Building</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Land" title="https://arsip.ui.ac.id/ontology/Land">Land Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasEvidence" title="https://arsip.ui.ac.id/ontology/hasEvidence">has evidence</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasLocation" title="https://arsip.ui.ac.id/ontology/hasLocation">has location</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#ownershipEvidence"
+               title="https://arsip.ui.ac.id/ontology/ownershipEvidence">ownership evidence</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Building">
+      <h3>Building<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Building</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Asset" title="https://arsip.ui.ac.id/ontology/Asset">Asset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Degree">
+      <h3>Educational Degree<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Degree</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasDegree" title="https://arsip.ui.ac.id/ontology/hasDegree">hasDegree</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#diploma" title="https://arsip.ui.ac.id/ontology/diploma">Diploma</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#doktor" title="https://arsip.ui.ac.id/ontology/doktor">Doktor</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#magister" title="https://arsip.ui.ac.id/ontology/magister">Magister</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Profesi" title="https://arsip.ui.ac.id/ontology/Profesi">Profesi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#sarjana" title="https://arsip.ui.ac.id/ontology/sarjana">Sarjana</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Spesialis" title="https://arsip.ui.ac.id/ontology/Spesialis">Spesialis</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Educational_Organization">
+      <h3>Educational Organization<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Educational_Organization</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Organization" title="https://arsip.ui.ac.id/ontology/Organization">Organization</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDegree" title="https://arsip.ui.ac.id/ontology/hasDegree">hasDegree</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Event">
+      <h3>Event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Event</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Activity" title="https://arsip.ui.ac.id/ontology/Activity">Activity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#create" title="https://arsip.ui.ac.id/ontology/create">create</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#createdAt" title="https://arsip.ui.ac.id/ontology/createdAt">locationCreated</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#performedBy" title="https://arsip.ui.ac.id/ontology/performedBy">performed by</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#performe" title="https://arsip.ui.ac.id/ontology/performe">performe</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#producesBy" title="https://arsip.ui.ac.id/ontology/producesBy">producesBy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Akreditasi" title="https://arsip.ui.ac.id/ontology/Akreditasi">Akreditasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Pengadaan" title="https://arsip.ui.ac.id/ontology/Pengadaan">pengadaan</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="gmd">
+      <h3>GMD<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/gmd</p>
+      <div class="comment">
+         <span class="markdown">General Material Designation, AACR (1.1C)</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#belongsTo" title="https://arsip.ui.ac.id/ontology/belongsTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#category" title="https://arsip.ui.ac.id/ontology/category">hasCategory</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#ComputerFile" title="https://arsip.ui.ac.id/ontology/ComputerFile">Computer File</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Manuscript" title="https://arsip.ui.ac.id/ontology/Manuscript">Manuscript</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Map" title="https://arsip.ui.ac.id/ontology/Map">Map</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Model" title="https://arsip.ui.ac.id/ontology/Model">Model</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MotionPicture" title="https://arsip.ui.ac.id/ontology/MotionPicture">Motion Picture</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Music" title="https://arsip.ui.ac.id/ontology/Music">Music</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Picture" title="https://arsip.ui.ac.id/ontology/Picture">Picture</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Slide" title="https://arsip.ui.ac.id/ontology/Slide">Slide</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SoundRecording" title="https://arsip.ui.ac.id/ontology/SoundRecording">Sound Recording</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#TechnicalDrawing"
+               title="https://arsip.ui.ac.id/ontology/TechnicalDrawing">Technical Drawing</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Text" title="https://arsip.ui.ac.id/ontology/Text">Text</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#VideoRecording" title="https://arsip.ui.ac.id/ontology/VideoRecording">Video Recording</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Government">
+      <h3>Government<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Government</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Organization" title="https://arsip.ui.ac.id/ontology/Organization">Organization</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Unit_Group">
+      <h3>Group<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Unit_Group</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Agent" title="https://arsip.ui.ac.id/ontology/Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#groupOf" title="https://arsip.ui.ac.id/ontology/groupOf">groupOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasGroup" title="https://arsip.ui.ac.id/ontology/hasGroup">hasGroup</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#PAU" title="https://arsip.ui.ac.id/ontology/PAU">PAU</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#RIK" title="https://arsip.ui.ac.id/ontology/RIK">RIK</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Fakultas" title="https://arsip.ui.ac.id/ontology/Fakultas">fakultas</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Industry_Organization">
+      <h3>Industry Organization<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Industry_Organization</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Organization" title="https://arsip.ui.ac.id/ontology/Organization">Organization</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Product">
+      <h3>Innovation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Product</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#KnownFor" title="https://arsip.ui.ac.id/ontology/KnownFor">KnownFor</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Instantiation">
+      <h3>Instantiation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Instantiation</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#fileformat" title="https://arsip.ui.ac.id/ontology/fileformat">fileformat</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#filesize" title="https://arsip.ui.ac.id/ontology/filesize">filesize</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#instantiate" title="https://arsip.ui.ac.id/ontology/instantiate">instantiates</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasInstantiation" title="https://arsip.ui.ac.id/ontology/hasInstantiation">hasInstantiation</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Kepakaran">
+      <h3>Kepakaran<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Kepakaran</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasKepakaran" title="https://arsip.ui.ac.id/ontology/hasKepakaran">has kepakaran</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#kepakaran" title="https://arsip.ui.ac.id/ontology/kepakaran">Kepakaran</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Land">
+      <h3>Land Property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Land</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Asset" title="https://arsip.ui.ac.id/ontology/Asset">Asset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Dosen">
+      <h3>Lecturer<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Dosen</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Person" title="https://arsip.ui.ac.id/ontology/Person">Person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#NIDN" title="https://arsip.ui.ac.id/ontology/NIDN">NIDN</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#NIP" title="https://arsip.ui.ac.id/ontology/NIP">NIP</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#NUP" title="https://arsip.ui.ac.id/ontology/NUP">NUP</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Organization">
+      <h3>Organization<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Organization</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Agent" title="https://arsip.ui.ac.id/ontology/Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Educational_Organization"
+               title="https://arsip.ui.ac.id/ontology/Educational_Organization">Educational Organization</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Government" title="https://arsip.ui.ac.id/ontology/Government">Government</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Industry_Organization"
+               title="https://arsip.ui.ac.id/ontology/Industry_Organization">Industry Organization</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Organizational_Unit"
+               title="https://arsip.ui.ac.id/ontology/Organizational_Unit">Organization Unit</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#administratifHistoy"
+               title="https://arsip.ui.ac.id/ontology/administratifHistoy">administratifHistoy</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMember" title="https://arsip.ui.ac.id/ontology/hasMember">hasMember</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPosition" title="https://arsip.ui.ac.id/ontology/hasPosition">hasPosition</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#history" title="https://arsip.ui.ac.id/ontology/history">history</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#name" title="https://arsip.ui.ac.id/ontology/name">organizationName</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#affiliate" title="https://arsip.ui.ac.id/ontology/affiliate">affiliateTo</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#manage" title="https://arsip.ui.ac.id/ontology/manage">manage</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Organizational_Unit">
+      <h3>Organization Unit<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Organizational_Unit</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Organization" title="https://arsip.ui.ac.id/ontology/Organization">Organization</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#divisionOf" title="https://arsip.ui.ac.id/ontology/divisionOf">divisionOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasDivision" title="https://arsip.ui.ac.id/ontology/hasDivision">hasDivision</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasGroup" title="https://arsip.ui.ac.id/ontology/hasGroup">hasGroup</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#divisionOf" title="https://arsip.ui.ac.id/ontology/divisionOf">divisionOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#groupOf" title="https://arsip.ui.ac.id/ontology/groupOf">groupOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasDivision" title="https://arsip.ui.ac.id/ontology/hasDivision">hasDivision</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Person">
+      <h3>Person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Person</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Agent" title="https://arsip.ui.ac.id/ontology/Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Dosen" title="https://arsip.ui.ac.id/ontology/Dosen">Lecturer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Tenaga_Kependidikan"
+               title="https://arsip.ui.ac.id/ontology/Tenaga_Kependidikan">Staff</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Mahasiswa" title="https://arsip.ui.ac.id/ontology/Mahasiswa">Student</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#KnownFor" title="https://arsip.ui.ac.id/ontology/KnownFor">KnownFor</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#SSO" title="https://arsip.ui.ac.id/ontology/SSO">SSO</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#affiliate" title="https://arsip.ui.ac.id/ontology/affiliate">affiliateTo</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#dateOfBirth" title="https://arsip.ui.ac.id/ontology/dateOfBirth">dateOfBirth</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasKepakaran" title="https://arsip.ui.ac.id/ontology/hasKepakaran">has kepakaran</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#occupies" title="https://arsip.ui.ac.id/ontology/occupies">occupies</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ID" title="https://arsip.ui.ac.id/ontology/ID">personName</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasMember" title="https://arsip.ui.ac.id/ontology/hasMember">hasMember</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#occupiedBy" title="https://arsip.ui.ac.id/ontology/occupiedBy">occupiedBy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Self_Storage">
+      <h3>Physical Storage<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Self_Storage</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#storage" title="https://arsip.ui.ac.id/ontology/storage">storeAt</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Place">
+      <h3>Place<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Place</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasLocation" title="https://arsip.ui.ac.id/ontology/hasLocation">has location</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#createdAt" title="https://arsip.ui.ac.id/ontology/createdAt">locationCreated</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Bekasi" title="https://arsip.ui.ac.id/ontology/Bekasi">Bekasi</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Ciputat" title="https://arsip.ui.ac.id/ontology/Ciputat">Ciputat</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Depok" title="https://arsip.ui.ac.id/ontology/Depok">Depok</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Jakarta" title="https://arsip.ui.ac.id/ontology/Jakarta">Jakarta</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Rawamangun" title="https://arsip.ui.ac.id/ontology/Rawamangun">Rawamangun</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Salemba" title="https://arsip.ui.ac.id/ontology/Salemba">Salemba</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Position">
+      <h3>Position<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Position</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Agent" title="https://arsip.ui.ac.id/ontology/Agent">Agent</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#manage" title="https://arsip.ui.ac.id/ontology/manage">manage</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#occupiedBy" title="https://arsip.ui.ac.id/ontology/occupiedBy">occupiedBy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasPosition" title="https://arsip.ui.ac.id/ontology/hasPosition">hasPosition</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#occupies" title="https://arsip.ui.ac.id/ontology/occupies">occupies</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#GuruBesar" title="https://arsip.ui.ac.id/ontology/GuruBesar">guru besar</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Record">
+      <h3>Record Resource<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Record</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Product" title="https://arsip.ui.ac.id/ontology/Product">Innovation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#createBy" title="https://arsip.ui.ac.id/ontology/createBy">createBy</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#dateCreation" title="https://arsip.ui.ac.id/ontology/dateCreation">dateCreation</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#described" title="https://arsip.ui.ac.id/ontology/described">described</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#description" title="https://arsip.ui.ac.id/ontology/description">description</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#documentNumber" title="https://arsip.ui.ac.id/ontology/documentNumber">document number</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasArchivesType" title="https://arsip.ui.ac.id/ontology/hasArchivesType">has archives type</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#category" title="https://arsip.ui.ac.id/ontology/category">hasCategory</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasClasification" title="https://arsip.ui.ac.id/ontology/hasClasification">hasClasification</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasInstantiation" title="https://arsip.ui.ac.id/ontology/hasInstantiation">hasInstantiation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRetentionPeriod"
+               title="https://arsip.ui.ac.id/ontology/hasRetentionPeriod">hasRetentionPeriod</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#identifier" title="https://arsip.ui.ac.id/ontology/identifier">identifier</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#name" title="https://arsip.ui.ac.id/ontology/name">organizationName</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#originality" title="https://arsip.ui.ac.id/ontology/originality">originality</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#ownershipEvidence"
+               title="https://arsip.ui.ac.id/ontology/ownershipEvidence">ownership evidence</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#producesBy" title="https://arsip.ui.ac.id/ontology/producesBy">producesBy</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#quantity" title="https://arsip.ui.ac.id/ontology/quantity">quantity</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#storage" title="https://arsip.ui.ac.id/ontology/storage">storeAt</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#belongsTo" title="https://arsip.ui.ac.id/ontology/belongsTo">belongsTo</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#create" title="https://arsip.ui.ac.id/ontology/create">create</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasEvidence" title="https://arsip.ui.ac.id/ontology/hasEvidence">has evidence</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasAward" title="https://arsip.ui.ac.id/ontology/hasAward">hasAward</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasResources" title="https://arsip.ui.ac.id/ontology/hasResources">hasResources</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#instantiate" title="https://arsip.ui.ac.id/ontology/instantiate">instantiates</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#legalStatus" title="https://arsip.ui.ac.id/ontology/legalStatus">legalStatus</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Retenstion_Schedule">
+      <h3>Retention Schedule<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Retenstion_Schedule</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasRetentionPeriod"
+               title="https://arsip.ui.ac.id/ontology/hasRetentionPeriod">hasRetentionPeriod</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#nilaiKembali" title="https://arsip.ui.ac.id/ontology/nilaiKembali">Dinilai Kembali</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Musnah" title="https://arsip.ui.ac.id/ontology/Musnah">Musnah</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Permanen" title="https://arsip.ui.ac.id/ontology/Permanen">Permanen</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tenaga_Kependidikan">
+      <h3>Staff<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Tenaga_Kependidikan</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Person" title="https://arsip.ui.ac.id/ontology/Person">Person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#NIP" title="https://arsip.ui.ac.id/ontology/NIP">NIP</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Mahasiswa">
+      <h3>Student<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Mahasiswa</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Person" title="https://arsip.ui.ac.id/ontology/Person">Person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#NPM" title="https://arsip.ui.ac.id/ontology/NPM">NPM</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Clasification_Schema">
+      <h3>Subjects<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/Clasification_Schema</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasIndeks" title="https://arsip.ui.ac.id/ontology/hasIndeks">hasIndeks</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasResources" title="https://arsip.ui.ac.id/ontology/hasResources">hasResources</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSubClasification"
+               title="https://arsip.ui.ac.id/ontology/hasSubClasification">hasSubClasification</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasClasification" title="https://arsip.ui.ac.id/ontology/hasClasification">hasClasification</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSubClasification"
+               title="https://arsip.ui.ac.id/ontology/hasSubClasification">hasSubClasification</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#http://sekar.ui.ac.id/index.php/subjects" title="http://sekar.ui.ac.id/index.php/subjects">subjects</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#affiliate" title="https://arsip.ui.ac.id/ontology/affiliate">affiliateTo</a>
+      </li>
+      <li>
+         <a href="#belongsTo" title="https://arsip.ui.ac.id/ontology/belongsTo">belongsTo</a>
+      </li>
+      <li>
+         <a href="#create" title="https://arsip.ui.ac.id/ontology/create">create</a>
+      </li>
+      <li>
+         <a href="#createBy" title="https://arsip.ui.ac.id/ontology/createBy">createBy</a>
+      </li>
+      <li>
+         <a href="#described" title="https://arsip.ui.ac.id/ontology/described">described</a>
+      </li>
+      <li>
+         <a href="#divisionOf" title="https://arsip.ui.ac.id/ontology/divisionOf">divisionOf</a>
+      </li>
+      <li>
+         <a href="#groupOf" title="https://arsip.ui.ac.id/ontology/groupOf">groupOf</a>
+      </li>
+      <li>
+         <a href="#hasArchivesType" title="https://arsip.ui.ac.id/ontology/hasArchivesType">
+            <span>has archives type</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasEvidence" title="https://arsip.ui.ac.id/ontology/hasEvidence">
+            <span>has evidence</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasKepakaran" title="https://arsip.ui.ac.id/ontology/hasKepakaran">
+            <span>has kepakaran</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasLocation" title="https://arsip.ui.ac.id/ontology/hasLocation">
+            <span>has location</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasAward" title="https://arsip.ui.ac.id/ontology/hasAward">hasAward</a>
+      </li>
+      <li>
+         <a href="#category" title="https://arsip.ui.ac.id/ontology/category">hasCategory</a>
+      </li>
+      <li>
+         <a href="#hasClasification" title="https://arsip.ui.ac.id/ontology/hasClasification">hasClasification</a>
+      </li>
+      <li>
+         <a href="#hasDegree" title="https://arsip.ui.ac.id/ontology/hasDegree">hasDegree</a>
+      </li>
+      <li>
+         <a href="#hasDivision" title="https://arsip.ui.ac.id/ontology/hasDivision">hasDivision</a>
+      </li>
+      <li>
+         <a href="#hasGroup" title="https://arsip.ui.ac.id/ontology/hasGroup">hasGroup</a>
+      </li>
+      <li>
+         <a href="#hasInstantiation" title="https://arsip.ui.ac.id/ontology/hasInstantiation">hasInstantiation</a>
+      </li>
+      <li>
+         <a href="#hasMember" title="https://arsip.ui.ac.id/ontology/hasMember">hasMember</a>
+      </li>
+      <li>
+         <a href="#hasPosition" title="https://arsip.ui.ac.id/ontology/hasPosition">hasPosition</a>
+      </li>
+      <li>
+         <a href="#hasResources" title="https://arsip.ui.ac.id/ontology/hasResources">hasResources</a>
+      </li>
+      <li>
+         <a href="#hasRetentionPeriod"
+            title="https://arsip.ui.ac.id/ontology/hasRetentionPeriod">hasRetentionPeriod</a>
+      </li>
+      <li>
+         <a href="#hasSubClasification"
+            title="https://arsip.ui.ac.id/ontology/hasSubClasification">hasSubClasification</a>
+      </li>
+      <li>
+         <a href="#instantiate" title="https://arsip.ui.ac.id/ontology/instantiate">instantiates</a>
+      </li>
+      <li>
+         <a href="#KnownFor" title="https://arsip.ui.ac.id/ontology/KnownFor">KnownFor</a>
+      </li>
+      <li>
+         <a href="#legalStatus" title="https://arsip.ui.ac.id/ontology/legalStatus">legalStatus</a>
+      </li>
+      <li>
+         <a href="#createdAt" title="https://arsip.ui.ac.id/ontology/createdAt">locationCreated</a>
+      </li>
+      <li>
+         <a href="#manage" title="https://arsip.ui.ac.id/ontology/manage">manage</a>
+      </li>
+      <li>
+         <a href="#occupiedBy" title="https://arsip.ui.ac.id/ontology/occupiedBy">occupiedBy</a>
+      </li>
+      <li>
+         <a href="#occupies" title="https://arsip.ui.ac.id/ontology/occupies">occupies</a>
+      </li>
+      <li>
+         <a href="#ownershipEvidence"
+            title="https://arsip.ui.ac.id/ontology/ownershipEvidence">
+            <span>ownership evidence</span>
+         </a>
+      </li>
+      <li>
+         <a href="#performe" title="https://arsip.ui.ac.id/ontology/performe">performe</a>
+      </li>
+      <li>
+         <a href="#performedBy" title="https://arsip.ui.ac.id/ontology/performedBy">
+            <span>performed by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#producesBy" title="https://arsip.ui.ac.id/ontology/producesBy">producesBy</a>
+      </li>
+      <li>
+         <a href="#storage" title="https://arsip.ui.ac.id/ontology/storage">storeAt</a>
+      </li>
+   </ul>
+   <div class="entity" id="affiliate">
+      <h3>affiliateTo<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/affiliate</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Person" title="https://arsip.ui.ac.id/ontology/Person">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Organization" title="https://arsip.ui.ac.id/ontology/Organization">Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasMember" title="https://arsip.ui.ac.id/ontology/hasMember">hasMember</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="belongsTo">
+      <h3>belongsTo<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/belongsTo</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#gmd" title="https://arsip.ui.ac.id/ontology/gmd">GMD</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#category" title="https://arsip.ui.ac.id/ontology/category">hasCategory</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="create">
+      <h3>create<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/create</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Event" title="https://arsip.ui.ac.id/ontology/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#producesBy" title="https://arsip.ui.ac.id/ontology/producesBy">producesBy</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="createBy">
+      <h3>createBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/createBy</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> inverse functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Agent" title="https://arsip.ui.ac.id/ontology/Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="described">
+      <h3>described<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/described</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Agent" title="https://arsip.ui.ac.id/ontology/Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#legalStatus" title="https://arsip.ui.ac.id/ontology/legalStatus">legalStatus</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="divisionOf">
+      <h3>divisionOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/divisionOf</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Organizational_Unit"
+                  title="https://arsip.ui.ac.id/ontology/Organizational_Unit">Organization Unit</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Organizational_Unit"
+                  title="https://arsip.ui.ac.id/ontology/Organizational_Unit">Organization Unit</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasDivision" title="https://arsip.ui.ac.id/ontology/hasDivision">hasDivision</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="groupOf">
+      <h3>groupOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/groupOf</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Unit_Group" title="https://arsip.ui.ac.id/ontology/Unit_Group">Group</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Organizational_Unit"
+                  title="https://arsip.ui.ac.id/ontology/Organizational_Unit">Organization Unit</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasGroup" title="https://arsip.ui.ac.id/ontology/hasGroup">hasGroup</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasArchivesType">
+      <h3>has archives type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasArchivesType</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Archives_Type" title="https://arsip.ui.ac.id/ontology/Archives_Type">Archives Type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasEvidence">
+      <h3>has evidence<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasEvidence</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Asset" title="https://arsip.ui.ac.id/ontology/Asset">Asset</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#ownershipEvidence"
+                  title="https://arsip.ui.ac.id/ontology/ownershipEvidence">ownership evidence</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasKepakaran">
+      <h3>has kepakaran<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasKepakaran</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Person" title="https://arsip.ui.ac.id/ontology/Person">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Kepakaran" title="https://arsip.ui.ac.id/ontology/Kepakaran">Kepakaran</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLocation">
+      <h3>has location<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasLocation</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Asset" title="https://arsip.ui.ac.id/ontology/Asset">Asset</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Place" title="https://arsip.ui.ac.id/ontology/Place">Place</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasAward">
+      <h3>hasAward<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasAward</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Agent" title="https://arsip.ui.ac.id/ontology/Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="category">
+      <h3>hasCategory<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/category</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#gmd" title="https://arsip.ui.ac.id/ontology/gmd">GMD</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#belongsTo" title="https://arsip.ui.ac.id/ontology/belongsTo">belongsTo</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasClasification">
+      <h3>hasClasification<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasClasification</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Clasification_Schema"
+                  title="https://arsip.ui.ac.id/ontology/Clasification_Schema">Subjects</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasResources" title="https://arsip.ui.ac.id/ontology/hasResources">hasResources</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDegree">
+      <h3>hasDegree<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasDegree</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Educational_Organization"
+                  title="https://arsip.ui.ac.id/ontology/Educational_Organization">Educational Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Degree" title="https://arsip.ui.ac.id/ontology/Degree">Educational Degree</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDivision">
+      <h3>hasDivision<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasDivision</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Organizational_Unit"
+                  title="https://arsip.ui.ac.id/ontology/Organizational_Unit">Organization Unit</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Organizational_Unit"
+                  title="https://arsip.ui.ac.id/ontology/Organizational_Unit">Organization Unit</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#divisionOf" title="https://arsip.ui.ac.id/ontology/divisionOf">divisionOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasGroup">
+      <h3>hasGroup<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasGroup</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Organizational_Unit"
+                  title="https://arsip.ui.ac.id/ontology/Organizational_Unit">Organization Unit</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Unit_Group" title="https://arsip.ui.ac.id/ontology/Unit_Group">Group</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#groupOf" title="https://arsip.ui.ac.id/ontology/groupOf">groupOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasInstantiation">
+      <h3>hasInstantiation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasInstantiation</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Instantiation" title="https://arsip.ui.ac.id/ontology/Instantiation">Instantiation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#instantiate" title="https://arsip.ui.ac.id/ontology/instantiate">instantiates</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMember">
+      <h3>hasMember<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasMember</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Organization" title="https://arsip.ui.ac.id/ontology/Organization">Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Person" title="https://arsip.ui.ac.id/ontology/Person">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#affiliate" title="https://arsip.ui.ac.id/ontology/affiliate">affiliateTo</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPosition">
+      <h3>hasPosition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasPosition</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Organization" title="https://arsip.ui.ac.id/ontology/Organization">Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Position" title="https://arsip.ui.ac.id/ontology/Position">Position</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#manage" title="https://arsip.ui.ac.id/ontology/manage">manage</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasResources">
+      <h3>hasResources<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasResources</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Clasification_Schema"
+                  title="https://arsip.ui.ac.id/ontology/Clasification_Schema">Subjects</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasClasification" title="https://arsip.ui.ac.id/ontology/hasClasification">hasClasification</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRetentionPeriod">
+      <h3>hasRetentionPeriod<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasRetentionPeriod</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Retenstion_Schedule"
+                  title="https://arsip.ui.ac.id/ontology/Retenstion_Schedule">Retention Schedule</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSubClasification">
+      <h3>hasSubClasification<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasSubClasification</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Clasification_Schema"
+                  title="https://arsip.ui.ac.id/ontology/Clasification_Schema">Subjects</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Clasification_Schema"
+                  title="https://arsip.ui.ac.id/ontology/Clasification_Schema">Subjects</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="instantiate">
+      <h3>instantiates<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/instantiate</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Instantiation" title="https://arsip.ui.ac.id/ontology/Instantiation">Instantiation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasInstantiation" title="https://arsip.ui.ac.id/ontology/hasInstantiation">hasInstantiation</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="KnownFor">
+      <h3>KnownFor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/KnownFor</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Person" title="https://arsip.ui.ac.id/ontology/Person">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Product" title="https://arsip.ui.ac.id/ontology/Product">Innovation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="legalStatus">
+      <h3>legalStatus<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/legalStatus</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Agent" title="https://arsip.ui.ac.id/ontology/Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#described" title="https://arsip.ui.ac.id/ontology/described">described</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="createdAt">
+      <h3>locationCreated<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/createdAt</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Event" title="https://arsip.ui.ac.id/ontology/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Place" title="https://arsip.ui.ac.id/ontology/Place">Place</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="manage">
+      <h3>manage<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/manage</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Position" title="https://arsip.ui.ac.id/ontology/Position">Position</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Organization" title="https://arsip.ui.ac.id/ontology/Organization">Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasPosition" title="https://arsip.ui.ac.id/ontology/hasPosition">hasPosition</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="occupiedBy">
+      <h3>occupiedBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/occupiedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Position" title="https://arsip.ui.ac.id/ontology/Position">Position</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Person" title="https://arsip.ui.ac.id/ontology/Person">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#occupies" title="https://arsip.ui.ac.id/ontology/occupies">occupies</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="occupies">
+      <h3>occupies<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/occupies</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Person" title="https://arsip.ui.ac.id/ontology/Person">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Position" title="https://arsip.ui.ac.id/ontology/Position">Position</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#occupiedBy" title="https://arsip.ui.ac.id/ontology/occupiedBy">occupiedBy</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="ownershipEvidence">
+      <h3>ownership evidence<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/ownershipEvidence</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Asset" title="https://arsip.ui.ac.id/ontology/Asset">Asset</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasEvidence" title="https://arsip.ui.ac.id/ontology/hasEvidence">has evidence</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="performe">
+      <h3>performe<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/performe</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> asymmetric</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Agent" title="https://arsip.ui.ac.id/ontology/Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Event" title="https://arsip.ui.ac.id/ontology/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#performedBy" title="https://arsip.ui.ac.id/ontology/performedBy">performed by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="performedBy">
+      <h3>performed by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/performedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Event" title="https://arsip.ui.ac.id/ontology/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Agent" title="https://arsip.ui.ac.id/ontology/Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#performe" title="https://arsip.ui.ac.id/ontology/performe">performe</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="producesBy">
+      <h3>producesBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/producesBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Event" title="https://arsip.ui.ac.id/ontology/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#create" title="https://arsip.ui.ac.id/ontology/create">create</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="storage">
+      <h3>storeAt<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/storage</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Self_Storage" title="https://arsip.ui.ac.id/ontology/Self_Storage">Physical Storage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#administratifHistoy"
+            title="https://arsip.ui.ac.id/ontology/administratifHistoy">administratifHistoy</a>
+      </li>
+      <li>
+         <a href="#dateCreation" title="https://arsip.ui.ac.id/ontology/dateCreation">dateCreation</a>
+      </li>
+      <li>
+         <a href="#dateOfBirth" title="https://arsip.ui.ac.id/ontology/dateOfBirth">dateOfBirth</a>
+      </li>
+      <li>
+         <a href="#description" title="https://arsip.ui.ac.id/ontology/description">description</a>
+      </li>
+      <li>
+         <a href="#documentNumber" title="https://arsip.ui.ac.id/ontology/documentNumber">
+            <span>document number</span>
+         </a>
+      </li>
+      <li>
+         <a href="#fileformat" title="https://arsip.ui.ac.id/ontology/fileformat">fileformat</a>
+      </li>
+      <li>
+         <a href="#filesize" title="https://arsip.ui.ac.id/ontology/filesize">filesize</a>
+      </li>
+      <li>
+         <a href="#hasIndeks" title="https://arsip.ui.ac.id/ontology/hasIndeks">hasIndeks</a>
+      </li>
+      <li>
+         <a href="#history" title="https://arsip.ui.ac.id/ontology/history">history</a>
+      </li>
+      <li>
+         <a href="#identifier" title="https://arsip.ui.ac.id/ontology/identifier">
+            <span>identifier</span>
+         </a>
+      </li>
+      <li>
+         <a href="#NIDN" title="https://arsip.ui.ac.id/ontology/NIDN">NIDN</a>
+      </li>
+      <li>
+         <a href="#NIP" title="https://arsip.ui.ac.id/ontology/NIP">NIP</a>
+      </li>
+      <li>
+         <a href="#NPM" title="https://arsip.ui.ac.id/ontology/NPM">NPM</a>
+      </li>
+      <li>
+         <a href="#NUP" title="https://arsip.ui.ac.id/ontology/NUP">NUP</a>
+      </li>
+      <li>
+         <a href="#name" title="https://arsip.ui.ac.id/ontology/name">organizationName</a>
+      </li>
+      <li>
+         <a href="#originality" title="https://arsip.ui.ac.id/ontology/originality">
+            <span>originality</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ID" title="https://arsip.ui.ac.id/ontology/ID">personName</a>
+      </li>
+      <li>
+         <a href="#quantity" title="https://arsip.ui.ac.id/ontology/quantity">quantity</a>
+      </li>
+      <li>
+         <a href="#SSO" title="https://arsip.ui.ac.id/ontology/SSO">SSO</a>
+      </li>
+   </ul>
+   <div class="entity" id="administratifHistoy">
+      <h3>administratifHistoy<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/administratifHistoy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Organization" title="https://arsip.ui.ac.id/ontology/Organization">Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="dateCreation">
+      <h3>dateCreation<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/dateCreation</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="dateOfBirth">
+      <h3>dateOfBirth<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/dateOfBirth</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Person" title="https://arsip.ui.ac.id/ontology/Person">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="description">
+      <h3>description<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/description</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="documentNumber">
+      <h3>document number<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/documentNumber</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="fileformat">
+      <h3>fileformat<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/fileformat</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Instantiation" title="https://arsip.ui.ac.id/ontology/Instantiation">Instantiation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="filesize">
+      <h3>filesize<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/filesize</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Instantiation" title="https://arsip.ui.ac.id/ontology/Instantiation">Instantiation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasIndeks">
+      <h3>hasIndeks<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/hasIndeks</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Clasification_Schema"
+                  title="https://arsip.ui.ac.id/ontology/Clasification_Schema">Subjects</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="history">
+      <h3>history<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/history</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Organization" title="https://arsip.ui.ac.id/ontology/Organization">Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="identifier">
+      <h3>identifier<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/identifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="NIDN">
+      <h3>NIDN<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/NIDN</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Dosen" title="https://arsip.ui.ac.id/ontology/Dosen">Lecturer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="NIP">
+      <h3>NIP<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/NIP</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Dosen" title="https://arsip.ui.ac.id/ontology/Dosen">Lecturer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#Tenaga_Kependidikan"
+                  title="https://arsip.ui.ac.id/ontology/Tenaga_Kependidikan">Staff</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="NPM">
+      <h3>NPM<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/NPM</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Mahasiswa" title="https://arsip.ui.ac.id/ontology/Mahasiswa">Student</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="NUP">
+      <h3>NUP<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/NUP</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Dosen" title="https://arsip.ui.ac.id/ontology/Dosen">Lecturer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="name">
+      <h3>organizationName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/name</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Organization" title="https://arsip.ui.ac.id/ontology/Organization">Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="originality">
+      <h3>originality<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/originality</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="ID">
+      <h3>personName<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/ID</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Person" title="https://arsip.ui.ac.id/ontology/Person">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="quantity">
+      <h3>quantity<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/quantity</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="https://arsip.ui.ac.id/ontology/Record">Record Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="SSO">
+      <h3>SSO<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://arsip.ui.ac.id/ontology/SSO</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Person" title="https://arsip.ui.ac.id/ontology/Person">Person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgements">
+<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>
