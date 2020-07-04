@@ -16,9 +16,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-perkuliahan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-00-06-00-data-alumni"
   }, {
@@ -37,9 +34,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-hukum-dan-pengawasan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "id",
     "@value" : "HKP.00 - Undang-Undang"
@@ -52,9 +46,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-01-peraturan-peraturan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -73,9 +64,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-01-peraturan-peraturan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.01.01 - Peraturan Menteri"
@@ -88,9 +76,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-01-peraturan-peraturan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -105,9 +90,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-01-peraturan-peraturan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.01.03 - Peraturan Fakultas"
@@ -120,9 +102,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-hukum-dan-pengawasan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-01-00-peraturan-pemerintah"
@@ -146,9 +125,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-keputusan-keputusan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.02.00 - Surat Keputusan Presiden"
@@ -161,9 +137,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-keputusan-keputusan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -178,9 +151,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-keputusan-keputusan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.02.02 - Surat Keputusan Gubernur"
@@ -193,9 +163,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-03-surat-keputusan-universitas"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -210,9 +177,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-03-surat-keputusan-universitas"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "id",
     "@value" : "HKP.02.03.01 - Senar Akademik Universitas (SAU)"
@@ -226,9 +190,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-03-surat-keputusan-universitas"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.02.03.02 - Dewan Guru Besar (DGB)"
@@ -241,9 +202,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-keputusan-keputusan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-03-00-majelis-wali-amanat-mwa"
@@ -265,9 +223,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-04-keputusan-dekan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.02.04.00 - Pengangkatan dan Pemberhentian"
@@ -280,9 +235,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-04-keputusan-dekan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -297,9 +249,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-04-keputusan-dekan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.02.04.02 - Kepanitiaan"
@@ -312,9 +261,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-04-keputusan-dekan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -329,9 +275,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-04-keputusan-dekan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.02.04.04 - Kemahasiswaan"
@@ -344,9 +287,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-04-keputusan-dekan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -361,9 +301,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-04-keputusan-dekan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.02.04.06 - Kepegawaian"
@@ -376,9 +313,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-keputusan-keputusan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-04-00-pengangkatan-dan-pemberhentian"
@@ -408,9 +342,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-hukum-dan-pengawasan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-02-00-surat-keputusan-presiden"
   }, {
@@ -435,9 +366,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-03-instruksi-instruksi"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.03.00 - Instruksi Presiden"
@@ -450,9 +378,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-03-instruksi-instruksi"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -467,9 +392,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-03-instruksi-instruksi"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.03.02 - Instruksi Gubernur"
@@ -483,9 +405,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-03-instruksi-instruksi"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.03.03 - Instruksi Universitas"
@@ -498,9 +417,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-hukum-dan-pengawasan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-03-00-instruksi-presiden"
@@ -524,9 +440,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-04-surat-edaran"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.04.00 - Surat Edaran Presiden"
@@ -539,9 +452,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-04-surat-edaran"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -556,9 +466,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-04-surat-edaran"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.04.02 - Surat Edaran Gubernur"
@@ -571,9 +478,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-04-surat-edaran"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -588,9 +492,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-04-surat-edaran"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.04.04 - Surat Edaran Fakultas"
@@ -603,9 +504,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-hukum-dan-pengawasan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-04-00-surat-edaran-presiden"
@@ -631,9 +529,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-05-kerjasama"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.05.00 - Perjanjian/ Kontrak/ Sewa"
@@ -646,9 +541,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-hukum-dan-pengawasan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-05-00-perjanjian-kontrak-sewa"
@@ -666,9 +558,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-06-pengawasan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.06.00 - Pengawasan Internal"
@@ -682,9 +571,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-06-pengawasan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.06.01 - Pengawasan Eksternal"
@@ -697,9 +583,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-hukum-dan-pengawasan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-06-00-pengawasan-internal"
@@ -719,9 +602,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-07-pelanggaran"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.07.00 - Akademik"
@@ -734,9 +614,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-07-pelanggaran"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -751,9 +628,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-07-pelanggaran"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.07.02 - Kasus Pidana"
@@ -767,9 +641,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-07-pelanggaran"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HKP.07.03 - Kasus Perdata"
@@ -782,9 +653,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-hukum-dan-pengawasan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-07-00-akademik"
@@ -804,12 +672,9 @@
   } ]
 }, {
   "@id" : "http://sekar.ui.ac.id/index.php/hkp-hukum-dan-pengawasan",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept", "https://arsip.ui.ac.id/ontology/Clasification_Schema" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/klasifikasi-universitas-indonesia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-00-undang-undang"
@@ -845,9 +710,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-00-humas-hubungan-masyarakat"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HMI.00.00 - Bakohumas"
@@ -860,9 +722,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-humas-dan-informatika"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-00-00-bakohumas"
@@ -880,9 +739,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-01-pemberitaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HMI.01.00 - Radio"
@@ -895,9 +751,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-01-pemberitaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -912,9 +765,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-01-pemberitaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HMI.01.02 - Televisi (Tv)"
@@ -928,9 +778,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-01-pemberitaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HMI.01.03 - Internet"
@@ -943,9 +790,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-humas-dan-informatika"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-01-00-radio"
@@ -969,9 +813,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-02-pameran"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HMI.02.00 - Pembangunan"
@@ -984,9 +825,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-02-pameran"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1001,9 +839,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-02-pameran"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HMI.02.02 - Mitra Kerja/ Partisipasi"
@@ -1016,9 +851,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-humas-dan-informatika"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-02-00-pembangunan"
@@ -1040,9 +872,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-03-publikasi-penerbitan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HMI.03.00 - Majalah"
@@ -1055,9 +884,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-03-publikasi-penerbitan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1072,9 +898,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-03-publikasi-penerbitan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HMI.03.02 - Sponsor"
@@ -1087,9 +910,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-humas-dan-informatika"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-03-00-majalah"
@@ -1111,9 +931,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-04-informatika"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HMI.04.00 - Statistik"
@@ -1126,9 +943,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-04-informatika"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1143,9 +957,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-04-informatika"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HMI.04.02 - Penyajian"
@@ -1158,9 +969,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-humas-dan-informatika"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-04-00-statistik"
@@ -1182,9 +990,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-05-dokumentasi"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HMI.05.00 - Kliping"
@@ -1197,9 +1002,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-05-dokumentasi"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1214,9 +1016,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-05-dokumentasi"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "HMI.05.02 - Audio Visual"
@@ -1229,9 +1028,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-humas-dan-informatika"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-05-00-kliping"
@@ -1249,12 +1045,9 @@
   } ]
 }, {
   "@id" : "http://sekar.ui.ac.id/index.php/hmi-humas-dan-informatika",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept", "https://arsip.ui.ac.id/ontology/Clasification_Schema" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/klasifikasi-universitas-indonesia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hmi-00-humas-hubungan-masyarakat"
@@ -1292,9 +1085,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-perkuliahan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-00-04-00-organisasi-kemahasiswaan"
   }, {
@@ -1324,9 +1114,6 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pendidikan-dan-pengajaran-2"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/data-dan-alumni"
@@ -1364,9 +1151,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pendidikan-dan-pengajaran-2"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-01-00-daftar-hadir-absen"
@@ -1414,9 +1198,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-perkuliahan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.00.00 - Kepanitiaan"
@@ -1436,9 +1217,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-perkuliahan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-00-05-00-beasiswa"
@@ -1464,9 +1242,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-keuangan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "KEU.00 - Rencana Anggaran Belanja"
@@ -1479,9 +1254,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-01-penerimaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1496,9 +1268,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-01-penerimaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "KEU.01.01 - Uang Kuliah"
@@ -1511,9 +1280,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-01-penerimaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1528,9 +1294,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-01-penerimaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "id",
     "@value" : "KEU.01.03 - SUmber Lain"
@@ -1543,9 +1306,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-keuangan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-01-00-pendaftaran-mahasiswa-registrasi"
@@ -1569,9 +1329,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-02-realisasi-anggaran"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "KEU.02.00 - Belanja Pegawai"
@@ -1584,9 +1341,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-02-01-belanja-perjalanan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1601,9 +1355,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-02-01-belanja-perjalanan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "KEU.02.01.01 - Operasional Bidang Penelitian"
@@ -1616,9 +1367,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-02-01-belanja-perjalanan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1633,9 +1381,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-02-01-belanja-perjalanan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "KEU.02.01.03 - Operasional BIdang Kemahasiswaan"
@@ -1648,9 +1393,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-02-realisasi-anggaran"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-02-01-00-operasional-bidang-akademik"
@@ -1674,9 +1416,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-02-realisasi-anggaran"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "id",
     "@value" : "KEU.02.02 - Belanja Barang"
@@ -1689,9 +1428,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-02-realisasi-anggaran"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1706,9 +1442,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-02-04-pengeluaran-pembangunan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "KEU.02.04.00 - Pemeliharaan Sarana"
@@ -1722,9 +1455,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-02-04-pengeluaran-pembangunan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "KEU.02.04.01 - Pajak"
@@ -1737,9 +1467,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-02-realisasi-anggaran"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-02-04-00-pemeliharaan-sarana"
@@ -1758,9 +1485,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-keuangan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-02-00-belanja-pegawai"
@@ -1786,9 +1510,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-keuangan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "KEU.03 - Laporan Keuangan"
@@ -1798,12 +1519,9 @@
   } ]
 }, {
   "@id" : "http://sekar.ui.ac.id/index.php/keu-keuangan",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept", "https://arsip.ui.ac.id/ontology/Clasification_Schema" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/klasifikasi-universitas-indonesia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/keu-00-rencana-anggaran-belanja"
@@ -1824,9 +1542,6 @@
 }, {
   "@id" : "http://sekar.ui.ac.id/index.php/klasifikasi-universitas-indonesia",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/hkp-hukum-dan-pengawasan"
   }, {
@@ -1872,9 +1587,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-logistik"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "LOG.00 - Perencanaan/ Analisa Kebutuhan"
@@ -1887,9 +1599,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-01-00-barang-bergerak"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1904,9 +1613,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-01-00-barang-bergerak"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "LOG.01.00.01 - Komputer"
@@ -1919,9 +1625,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-01-00-barang-bergerak"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1936,9 +1639,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-01-00-barang-bergerak"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "LOG.01.00.03 - Mesin Kantor"
@@ -1951,9 +1651,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-01-00-barang-bergerak"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1968,9 +1665,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-01-00-barang-bergerak"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "LOG.01.00.05 - Peralatan Lainnya"
@@ -1984,9 +1678,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-01-00-barang-bergerak"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "LOG.01.00.06 - Cetakan"
@@ -1999,9 +1690,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-01-pengadaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-01-00-00-perabot-kantor"
@@ -2031,9 +1719,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-01-01-barang-tidak-bergerak"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "LOG.01.01.00 - Tanah"
@@ -2047,9 +1732,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-01-01-barang-tidak-bergerak"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "LOG.01.01.01 - Bangunan"
@@ -2062,9 +1744,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-01-pengadaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-01-01-00-tanah"
@@ -2084,9 +1763,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-logistik"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-01-00-barang-bergerak"
   }, {
@@ -2105,9 +1781,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-02-distribusi"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "LOG.02.00 - Barang Bergerak"
@@ -2121,9 +1794,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-02-distribusi"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "LOG.02.01 - Cetakan"
@@ -2136,9 +1806,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-logistik"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-02-00-barang-bergerak"
@@ -2158,9 +1825,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-03-inventarisasi-barang"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "LOG.03.00 - Barang Bergerak"
@@ -2174,9 +1838,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-03-inventarisasi-barang"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "LOG.03.01 - Barang Tidak Bergerak"
@@ -2189,9 +1850,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-logistik"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-03-00-barang-bergerak"
@@ -2211,9 +1869,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-04-penghapusan-penyusutan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "LOG.04.00 - Barang Bergerak"
@@ -2227,9 +1882,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-04-penghapusan-penyusutan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "LOG.04.01 - Barang Tidak Bergerak"
@@ -2242,9 +1894,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-logistik"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-04-00-barang-bergerak"
@@ -2260,12 +1909,9 @@
   } ]
 }, {
   "@id" : "http://sekar.ui.ac.id/index.php/log-logistik",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept", "https://arsip.ui.ac.id/ontology/Clasification_Schema" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/klasifikasi-universitas-indonesia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/log-00-perencanaan-analisa-kebutuhan"
@@ -2298,9 +1944,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-perkuliahan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.00.03 - Mutasi Mahasiswa"
@@ -2318,9 +1961,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-00-organisasi"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "OTL.00.00 - Pembentukan"
@@ -2333,9 +1973,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-00-organisasi"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2350,9 +1987,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-00-organisasi"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "OTL.00.03 - Penghapusan"
@@ -2365,9 +1999,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-organisasi-dan-tata-laksana"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-00-00-pembentukan"
@@ -2389,9 +2020,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-organisasi-dan-tata-laksana"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "OTL.01 - Rencana Induk Pengembangan"
@@ -2404,9 +2032,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-organisasi-dan-tata-laksana"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2421,9 +2046,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-03-tata-laksana"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "OTL.03.00 - Pembakuan Sistem"
@@ -2436,9 +2058,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-03-tata-laksana"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2466,9 +2085,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-03-tata-laksana"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "OTL.03.02 - Standarisasi"
@@ -2486,9 +2102,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-03-tata-laksana"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "OTL.03.03 - Tata Ruang/ Layout"
@@ -2501,9 +2114,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-organisasi-dan-tata-laksana"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-03-00-pembakuan-sistem"
@@ -2527,9 +2137,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-04-protokol"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "OTL.04.00 - Upacara/ Acara"
@@ -2543,9 +2150,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-04-protokol"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "OTL.04.01 - Kunjungan"
@@ -2558,9 +2162,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-organisasi-dan-tata-laksana"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-04-00-upacara-acara"
@@ -2580,9 +2181,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-organisasi-dan-tata-laksana"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "OTL.05 - Tata Persuratan"
@@ -2595,9 +2193,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-06-pengurusan-surat"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2612,9 +2207,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-06-pengurusan-surat"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "OTL.06.01 - Lembar Surat Pengantar"
@@ -2628,9 +2220,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-06-pengurusan-surat"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "OTL.06.02 - Formulir"
@@ -2643,9 +2232,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-organisasi-dan-tata-laksana"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-06-00-buku-agenda"
@@ -2667,9 +2253,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-organisasi-dan-tata-laksana"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "OTL.07 - Penggandaan"
@@ -2682,9 +2265,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-08-pusat-rekod"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2699,9 +2279,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-08-pusat-rekod"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "OTL.08.01 - Peminjaman Rekod"
@@ -2714,9 +2291,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-08-pusat-rekod"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2731,9 +2305,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-08-pusat-rekod"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "OTL.08.03 - Pembinaan"
@@ -2746,9 +2317,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-organisasi-dan-tata-laksana"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-08-00-pemindahan-rekod-ke-pusat-rekod"
@@ -2768,12 +2336,9 @@
   } ]
 }, {
   "@id" : "http://sekar.ui.ac.id/index.php/otl-organisasi-dan-tata-laksana",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept", "https://arsip.ui.ac.id/ontology/Clasification_Schema" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/klasifikasi-universitas-indonesia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/otl-00-organisasi"
@@ -2814,9 +2379,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/seleksi-mahasiswa"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.00.01.00 - Pelaksanaan Penerimaan Mahasiswa"
@@ -2837,9 +2399,6 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/seleksi-mahasiswa"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2865,9 +2424,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/seleksi-mahasiswa"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.00.01.03 - Naskah Soal Ujian"
@@ -2888,9 +2444,6 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-ekstrakulikuler"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2916,9 +2469,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-ekstrakulikuler"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "id",
     "@value" : "PDP.00.04.01 - Mahasiswa Berprestasi"
@@ -2939,9 +2489,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-ekstrakulikuler"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.00.04.02 - Karya Tulis Ilmiah"
@@ -2954,9 +2501,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-ekstrakulikuler"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2971,9 +2515,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-ekstrakulikuler"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.00.04.04 - Studi Banding"
@@ -2986,9 +2527,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-ekstrakulikuler"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3003,9 +2541,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kesejahteraan-dan-fasilitas"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.00.05.00 - Beasiswa"
@@ -3018,9 +2553,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kesejahteraan-dan-fasilitas"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3035,9 +2567,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kesejahteraan-dan-fasilitas"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.00.05.02 - Bimbingan dan Konseling"
@@ -3050,9 +2579,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kesejahteraan-dan-fasilitas"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "id",
@@ -3067,9 +2593,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kesejahteraan-dan-fasilitas"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.00.05.04 - Fasilitas"
@@ -3082,9 +2605,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/data-dan-alumni"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3099,9 +2619,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/data-dan-alumni"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.00.06.01 - Persatuan Orang Tua Mahasiswa (POM)"
@@ -3114,9 +2631,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/penyerahan-ijasah-sertifikat"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3131,9 +2645,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/penyerahan-ijasah-sertifikat"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.00.07.01 - Ijasah/ Sertifikat"
@@ -3146,9 +2657,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kemahasiswaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3163,9 +2671,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kemahasiswaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.01.01 - Kalender Akademik/ Jadwal"
@@ -3178,9 +2683,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kemahasiswaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3195,9 +2697,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kemahasiswaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.01.03 - Daftar Nilai Semester"
@@ -3210,9 +2709,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kemahasiswaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3227,9 +2723,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-01-05-status-mahasiswa"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.01.05.00 - Cuti Kuliah"
@@ -3242,9 +2735,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-01-05-status-mahasiswa"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3259,9 +2749,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-01-05-status-mahasiswa"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.01.05.02 - Pernyataan Masih Kuliah"
@@ -3274,9 +2761,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kemahasiswaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-01-05-00-cuti-kuliah"
@@ -3298,9 +2782,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sarana-perkuliahan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.02.00 - Laboratorium"
@@ -3313,9 +2794,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-02-01-perpustakaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3330,9 +2808,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-02-01-perpustakaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.02.01.01 - Pengolahan"
@@ -3345,9 +2820,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-02-01-perpustakaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3362,9 +2834,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-02-01-perpustakaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.02.01.03 - Kerjasama"
@@ -3377,9 +2846,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sarana-perkuliahan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-02-01-00-pengembangan-koleksi"
@@ -3403,9 +2869,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-03-00-silabus"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.03.00.00 - Satuan Acara Perkuliahan (SAP)"
@@ -3419,9 +2882,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-03-00-silabus"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.03.00.01 - Evaluasi Kurikulum"
@@ -3434,9 +2894,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pengembangan-kurikulum"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-03-00-00-satuan-acara-perkuliahan-sap"
@@ -3456,9 +2913,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pengembangan-kurikulum"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.03.01 - Buku Ajar"
@@ -3471,9 +2925,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/tugas-akhir"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3488,9 +2939,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/tugas-akhir"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.04.01 - Skripsi"
@@ -3503,9 +2951,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/tugas-akhir"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3520,9 +2965,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/tugas-akhir"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.04.03 - Program Khusus"
@@ -3532,12 +2974,9 @@
   } ]
 }, {
   "@id" : "http://sekar.ui.ac.id/index.php/pendidikan-dan-pengajaran-2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept", "https://arsip.ui.ac.id/ontology/Clasification_Schema" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/klasifikasi-universitas-indonesia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-perkuliahan"
@@ -3570,9 +3009,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pendidikan-dan-pengajaran-2"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-03-00-silabus"
   }, {
@@ -3598,9 +3034,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-perkuliahan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-00-07-00-upacara-wisuda"
   }, {
@@ -3619,9 +3052,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-00-penelitian"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PPM.00.00 - Usulan Penelitian"
@@ -3634,9 +3064,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-00-penelitian"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3651,9 +3078,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-00-penelitian"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PPM.00.02 - Pelaksanaan Penelitian"
@@ -3666,9 +3090,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-00-penelitian"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3683,9 +3104,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-00-penelitian"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PPM.00.04 - Publikasi"
@@ -3698,9 +3116,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-penelitian-dan-pengabdian-masyarakat"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-00-00-usulan-penelitian"
@@ -3726,9 +3141,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-01-pengabdian-pelayanan-pada-masyarakat"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PPM.01.00 - Kelembagaan"
@@ -3741,9 +3153,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-01-pengabdian-pelayanan-pada-masyarakat"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3758,9 +3167,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-01-pengabdian-pelayanan-pada-masyarakat"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PPM.01.02 - Konsultasi"
@@ -3773,9 +3179,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-01-pengabdian-pelayanan-pada-masyarakat"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3790,9 +3193,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-01-pengabdian-pelayanan-pada-masyarakat"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PPM.01.04 - Kerjasama"
@@ -3806,9 +3206,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-01-pengabdian-pelayanan-pada-masyarakat"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PPM.01.05 - Bantuan Sosial"
@@ -3821,9 +3218,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-penelitian-dan-pengabdian-masyarakat"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-01-00-kelembagaan"
@@ -3847,12 +3241,9 @@
   } ]
 }, {
   "@id" : "http://sekar.ui.ac.id/index.php/ppm-penelitian-dan-pengabdian-masyarakat",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept", "https://arsip.ui.ac.id/ontology/Clasification_Schema" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/klasifikasi-universitas-indonesia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/ppm-00-penelitian"
@@ -3876,9 +3267,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-perkuliahan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "PDP.00.02 - Registrasi Mahasiswa"
@@ -3899,9 +3287,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-rumah-tangga-kantor"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "RTK.00 - Penggunaan Sarana Kantor"
@@ -3914,9 +3299,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-01-pemeliharaan-sarana-kantor"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3931,9 +3313,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-01-pemeliharaan-sarana-kantor"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "RTK.01.01 - Bangunan"
@@ -3946,9 +3325,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-01-pemeliharaan-sarana-kantor"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3963,9 +3339,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-01-pemeliharaan-sarana-kantor"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "RTK.01.03 - Kendaraan"
@@ -3978,9 +3351,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-01-pemeliharaan-sarana-kantor"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3995,9 +3365,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-01-pemeliharaan-sarana-kantor"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "RTK.01.05 - Peralatan Lainnya"
@@ -4010,9 +3377,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-01-pemeliharaan-sarana-kantor"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4027,9 +3391,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-01-pemeliharaan-sarana-kantor"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "RTK.01.07 - Keamanan dan Ketertiban"
@@ -4043,9 +3404,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-01-pemeliharaan-sarana-kantor"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "RTK.01.08 - Pelayanan/ Fasilitas Kantor"
@@ -4058,9 +3416,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-rumah-tangga-kantor"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-01-00-tanah"
@@ -4094,9 +3449,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-rumah-tangga-kantor"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "RTK.02 - Pengelolaan Kantin"
@@ -4109,9 +3461,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-rumah-tangga-kantor"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4126,9 +3475,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-rumah-tangga-kantor"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "RTK.04 - Pengelolaan Mushola"
@@ -4138,12 +3484,9 @@
   } ]
 }, {
   "@id" : "http://sekar.ui.ac.id/index.php/rtk-rumah-tangga-kantor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept", "https://arsip.ui.ac.id/ontology/Clasification_Schema" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/klasifikasi-universitas-indonesia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/rtk-00-penggunaan-sarana-kantor"
@@ -4168,9 +3511,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pendidikan-dan-pengajaran-2"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-02-00-laboratorium"
@@ -4197,9 +3537,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-00-pengabdian-pegawai"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.00.00 - Analisa/ Perencanaan Kebutuhan"
@@ -4212,9 +3549,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-00-pengabdian-pegawai"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4229,9 +3563,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-00-pengabdian-pegawai"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.00.02 - Pengangkatan"
@@ -4244,9 +3575,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-sumber-daya-manusia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-00-00-analisa-perencanaan-kebutuhan"
@@ -4268,9 +3596,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-01-mutasi"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.01.00 - Kepangkatan"
@@ -4283,9 +3608,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-01-mutasi"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4300,9 +3622,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-01-mutasi"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.01.02 - Pemindahan"
@@ -4316,9 +3635,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-01-mutasi"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.01.03 - Pemindahan Sementara"
@@ -4331,9 +3647,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-sumber-daya-manusia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-01-00-kepangkatan"
@@ -4357,9 +3670,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-pembinaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.02.00 - Peninjauan Masa Kerja"
@@ -4372,9 +3682,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-pembinaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4389,9 +3696,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-pembinaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.02.02 - Penilaian/ Penetapan Angka Kredit"
@@ -4404,9 +3708,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-pembinaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4421,9 +3722,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-04-tugas-belajar-magang-diklat-kursus"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.02.04.00 - Tugas Belajar Program Diploma"
@@ -4436,9 +3734,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-04-tugas-belajar-magang-diklat-kursus"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4453,9 +3748,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-04-tugas-belajar-magang-diklat-kursus"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.02.04.02 - Diklat Persiapan Kerja (DPK)"
@@ -4468,9 +3760,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-04-tugas-belajar-magang-diklat-kursus"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4485,9 +3774,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-04-tugas-belajar-magang-diklat-kursus"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.02.04.04 - Diklat Kenaikan Golongan (DKG)"
@@ -4500,9 +3786,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-04-tugas-belajar-magang-diklat-kursus"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4517,9 +3800,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-04-tugas-belajar-magang-diklat-kursus"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.02.04.06 - Diklat Manajemen"
@@ -4532,9 +3812,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-04-tugas-belajar-magang-diklat-kursus"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4549,9 +3826,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-04-tugas-belajar-magang-diklat-kursus"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.02.04.08 - Kursus/ Pelatihan"
@@ -4564,9 +3838,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-04-tugas-belajar-magang-diklat-kursus"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4581,9 +3852,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-04-tugas-belajar-magang-diklat-kursus"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.02.04.10 - Seminar/ Konferensi/ Lokakarya/ Symposium"
@@ -4597,9 +3865,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-04-tugas-belajar-magang-diklat-kursus"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.02.04.11 - Penataran"
@@ -4612,9 +3877,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-pembinaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-04-00-tugas-belajar-program-diploma"
@@ -4654,9 +3916,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-pembinaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.02.05 - Ujian Dinas Pegawai"
@@ -4669,9 +3928,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-pembinaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4686,9 +3942,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-pembinaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.02.07 - Daftar Urut Kepangkatan"
@@ -4701,9 +3954,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-pembinaan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4718,9 +3968,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-pembinaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.02.09 - Rehabilitasi"
@@ -4734,9 +3981,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-pembinaan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.02.10 - Penghargaan Pegawai"
@@ -4749,9 +3993,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-sumber-daya-manusia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-02-00-peninjauan-masa-kerja"
@@ -4789,9 +4030,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-03-00-cuti"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.03.00.00 - Izin Pegawai"
@@ -4804,9 +4042,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-03-kesejahteraan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-03-00-00-izin-pegawai"
@@ -4824,9 +4059,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-03-kesejahteraan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.03.01 - Tabungan Perumahan"
@@ -4839,9 +4071,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-03-kesejahteraan"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4856,9 +4085,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-03-kesejahteraan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.03.03 - Kesehatan Pegawai"
@@ -4872,9 +4098,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-03-kesejahteraan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.03.04 - Bantuan Sosial"
@@ -4887,9 +4110,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-sumber-daya-manusia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-03-00-cuti"
@@ -4915,9 +4135,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-04-penghasilan-pegawai"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.04.00 - Gaji"
@@ -4930,9 +4147,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-04-penghasilan-pegawai"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4947,9 +4161,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-04-penghasilan-pegawai"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.04.02 - Lembur"
@@ -4962,9 +4173,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-04-penghasilan-pegawai"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4979,9 +4187,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-04-penghasilan-pegawai"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.04.04 - Penyesuaian Tunjangan Keluarga"
@@ -4994,9 +4199,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-sumber-daya-manusia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-04-00-gaji"
@@ -5022,9 +4224,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-05-administrasi-pegawai"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.05.00 - Perjalanan Dinas"
@@ -5037,9 +4236,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-05-administrasi-pegawai"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -5054,9 +4250,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-05-administrasi-pegawai"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.05.02 - Identitas Pegawai"
@@ -5069,9 +4262,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-05-administrasi-pegawai"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -5086,9 +4276,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-05-administrasi-pegawai"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.05.04 - Keanggotaan Partai Politik"
@@ -5102,9 +4289,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-05-administrasi-pegawai"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.05.05 - Laporan Pemberitahuan Pajak Penghasilan"
@@ -5117,9 +4301,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-sumber-daya-manusia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-05-00-perjalanan-dinas"
@@ -5147,9 +4328,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-06-pemberhentian-pegawai"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.06.00 - Atas Permintaan Sendiri"
@@ -5162,9 +4340,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-06-pemberhentian-pegawai"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "id",
@@ -5179,9 +4354,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-06-pemberhentian-pegawai"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.06.02 - Pensiun"
@@ -5195,9 +4367,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-06-pemberhentian-pegawai"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.06.03 - Wafat"
@@ -5210,9 +4379,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-sumber-daya-manusia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-06-00-atas-permintaan-sendiri"
@@ -5236,9 +4402,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-sumber-daya-manusia"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "SDM.07 - Personil File Pegawai"
@@ -5248,12 +4411,9 @@
   } ]
 }, {
   "@id" : "http://sekar.ui.ac.id/index.php/sdm-sumber-daya-manusia",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept", "https://arsip.ui.ac.id/ontology/Clasification_Schema" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/klasifikasi-universitas-indonesia"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/sdm-00-pengabdian-pegawai"
@@ -5289,9 +4449,6 @@
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/kegiatan-perkuliahan"
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
-  } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-00-01-00-pelaksanaan-penerimaan-mahasiswa"
   }, {
@@ -5314,26 +4471,10 @@
     "@value" : "Naskah-naskah yang berkaitan tentang Pelaksanaan Seleksi Penerimaan Mahasiswa melalui jalur SIMAK, Undangan, Olimpiade Sains, dan Mahasiswa Asing"
   } ]
 }, {
-  "@id" : "http://sekar.ui.ac.id/index.php/subjects",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme", "https://arsip.ui.ac.id/ontology/Clasification_Schema" ],
-  "http://purl.org/dc/elements/1.1/title" : [ {
-    "@language" : "en",
-    "@value" : "Subjects"
-  }, {
-    "@language" : "id",
-    "@value" : "Subjek"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/klasifikasi-universitas-indonesia"
-  } ]
-}, {
   "@id" : "http://sekar.ui.ac.id/index.php/tugas-akhir",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pendidikan-dan-pengajaran-2"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://sekar.ui.ac.id/index.php/subjects"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://sekar.ui.ac.id/index.php/pdp-04-00-praktik-kerja-lapangan"
@@ -5413,11 +4554,11 @@
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
-    "@value" : "Arsip ontology"
+    "@value" : "Ontologi Arsip Universitas"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "1.0"
+    "@value" : "0.1"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Activity",
@@ -5432,6 +4573,9 @@
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Agent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Agent terdiri dari person, organization, position, dan grup. Merupakan class yang digunakan untuk menggambarkan suatu entitas yang dapat menciptakan sebuah arsip."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Agent"
@@ -5443,14 +4587,64 @@
     "@value" : "Akreditasi"
   } ]
 }, {
-  "@id" : "https://arsip.ui.ac.id/ontology/Archives_Type",
+  "@id" : "https://arsip.ui.ac.id/ontology/Archives_Categories",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Digunakan untuk definisi Arsip Aktif, Ardip Inaktif, Arsip Dinamis, Arsip Vital, Arsip Statis, Arsip Terjaga"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Archives Type"
+    "@value" : "Archives Categories"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Type"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Arsip_Aktif",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Archives_Categories" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Arsip Aktif"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Arsip_Dinamis"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Arsip_Dinamis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Archives_Categories" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Arsip Dinamis"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Arsip_Aktif"
+  }, {
+    "@id" : "https://arsip.ui.ac.id/ontology/Arsip_Inaktif"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Arsip_Inaktif",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Archives_Categories" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Arsip Inaktif"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Arsip_Dinamis"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Arsip_Statis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Archives_Categories" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Arsip Statis"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Arsip_Terjaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Archives_Categories" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Arsip Terjaga"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Asset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Class ini digunakan untuk entitas aset universitas. Hingga ontologi ini disusun, cakupan dari aset pada entitas ini adalah aset tidak bergerak. Arsip yang mendasari class ini adalah arsip terkait aset seperti sertifikat tanah, izin mendirikan bangunan, dokumen evaluasi lingkungan hidup (Amdal), blueprint gedung."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Asset"
@@ -5463,7 +4657,7 @@
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/BorangAkreditasi",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Archives_Type" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Subjects" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Borang Akreditasi"
   } ]
@@ -5488,13 +4682,28 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Subjects"
+    "@value" : "Classification Schema"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Indeks"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/ComputerFile",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/gmd" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Content_Type" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Computer File"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Content_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Digunakan untuk definisi tipe isi dari arsip, seperti video, foto, teks, buku, technical drawing, dsb."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Content Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Type"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Degree",
@@ -5502,12 +4711,21 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Educational Degree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Type"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Depok",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Place" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Depok"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Desain_Industri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Intelectual_Right" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Desain Industri"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Dosen",
@@ -5556,9 +4774,21 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Position" ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/HAKI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Archives_Type" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Intelectual_Right" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "HAKI"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Hak_Cipta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Intelectual_Right" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hak Cipta"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Hak_Paten",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Intelectual_Right" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hak Paten"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/ID",
@@ -5574,6 +4804,18 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Indeks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Indeks"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Indikasi_Geografis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Intelectual_Right" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Indikasi Geografis"
+  } ]
+}, {
   "@id" : "https://arsip.ui.ac.id/ontology/Industry_Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -5583,11 +4825,32 @@
     "@id" : "https://arsip.ui.ac.id/ontology/Organization"
   } ]
 }, {
+  "@id" : "https://arsip.ui.ac.id/ontology/InnovatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/hasInnovation"
+  } ]
+}, {
   "@id" : "https://arsip.ui.ac.id/ontology/Instantiation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Instantiation"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Intelectual_Right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tipe kekayaan intelektual dijelaskan disini. Hak Keyakaan Intelektual. terdiri dari Paten, Merek, Hak Cipta, Desain Industri, Indikasi Geografis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Intelectual Right"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Type"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Jakarta",
@@ -5600,19 +4863,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Kepakaran"
-  } ]
-}, {
-  "@id" : "https://arsip.ui.ac.id/ontology/KnownFor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Person"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "KnownFor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Product"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Land",
@@ -5635,31 +4885,37 @@
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Manuscript",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/gmd" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Content_Type" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Manuscript"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Map",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/gmd" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Content_Type" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Map"
   } ]
 }, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Merek",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Intelectual_Right" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Merek"
+  } ]
+}, {
   "@id" : "https://arsip.ui.ac.id/ontology/Model",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/gmd" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Content_Type" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Model"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/MotionPicture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/gmd" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Content_Type" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Motion Picture"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Music",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/gmd" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Content_Type" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Music"
   } ]
@@ -5724,6 +4980,12 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Natural_Language_Indeks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Natural Language Indeks"
+  } ]
+}, {
   "@id" : "https://arsip.ui.ac.id/ontology/Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -5773,7 +5035,7 @@
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Picture",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/gmd" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Content_Type" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Picture"
   } ]
@@ -5793,16 +5055,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://arsip.ui.ac.id/ontology/Agent"
-  } ]
-}, {
-  "@id" : "https://arsip.ui.ac.id/ontology/Product",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Innovation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Record"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Profesi",
@@ -5867,19 +5119,19 @@
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/SertifikatAkreditasi",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Archives_Type" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Subjects" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Sertifikat Akreditasi"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Slide",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/gmd" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Content_Type" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Slide"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/SoundRecording",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/gmd" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Content_Type" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Sound Recording"
   } ]
@@ -5890,8 +5142,17 @@
     "@value" : "Spesialis"
   } ]
 }, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Subjects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Subjects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Indeks"
+  } ]
+}, {
   "@id" : "https://arsip.ui.ac.id/ontology/TechnicalDrawing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/gmd" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Content_Type" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Technical Drawing"
   } ],
@@ -5912,9 +5173,15 @@
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Text",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/gmd" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Content_Type" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Text"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Type"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Unit_Group",
@@ -5928,13 +5195,13 @@
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/VideoRecording",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/gmd" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Content_Type" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Video Recording"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/Vital",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Archives_Type" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://arsip.ui.ac.id/ontology/Archives_Categories" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Arsip Vital"
   } ]
@@ -5968,52 +5235,29 @@
     "@id" : "https://arsip.ui.ac.id/ontology/hasMember"
   } ]
 }, {
-  "@id" : "https://arsip.ui.ac.id/ontology/belongsTo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/gmd"
-  } ],
+  "@id" : "https://arsip.ui.ac.id/ontology/classificationSchema",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "belongsTo"
+    "@value" : "Classification Schema"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Record"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/category"
-  } ]
-}, {
-  "@id" : "https://arsip.ui.ac.id/ontology/category",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Record"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "hasCategory"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/gmd"
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
+    "@id" : "http://sekar.ui.ac.id/index.php/klasifikasi-universitas-indonesia"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/create",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Event"
+    "@id" : "https://arsip.ui.ac.id/ontology/Agent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "create"
-  }, {
-    "@language" : "en",
-    "@value" : "produces"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://arsip.ui.ac.id/ontology/Record"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/producesBy"
+    "@id" : "https://arsip.ui.ac.id/ontology/createBy"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/createBy",
@@ -6029,19 +5273,6 @@
     "@id" : "https://arsip.ui.ac.id/ontology/Agent"
   } ]
 }, {
-  "@id" : "https://arsip.ui.ac.id/ontology/createdAt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Event"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "locationCreated"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Place"
-  } ]
-}, {
   "@id" : "https://arsip.ui.ac.id/ontology/dateCreation",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -6050,6 +5281,36 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "dateCreation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/dateIssued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/dateModified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/dateOfBeginningPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/dateOfBirth",
@@ -6060,6 +5321,65 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "dateOfBirth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/dateOfDeath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/dateOfEndPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/dateOfEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/dateOfPension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Dosen"
+  }, {
+    "@id" : "https://arsip.ui.ac.id/ontology/Tenaga_Kependidikan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/dateValidBegin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/dateValidEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/described",
@@ -6119,7 +5439,7 @@
     "@id" : "https://arsip.ui.ac.id/ontology/Record"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/doktor",
@@ -6135,7 +5455,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "fileformat"
+    "@value" : "fileFormat"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -6148,46 +5468,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "filesize"
+    "@value" : "fileSize"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ]
-}, {
-  "@id" : "https://arsip.ui.ac.id/ontology/gmd",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "General Material Designation, AACR (1.1C)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "GMD"
-  } ]
-}, {
-  "@id" : "https://arsip.ui.ac.id/ontology/groupOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Unit_Group"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "groupOf"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Organizational_Unit"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/hasGroup"
-  } ]
-}, {
-  "@id" : "https://arsip.ui.ac.id/ontology/hasArchivesType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Record"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Archives_Type"
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/hasAward",
@@ -6198,28 +5482,39 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "hasAward"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Record"
   } ]
 }, {
-  "@id" : "https://arsip.ui.ac.id/ontology/hasClasification",
+  "@id" : "https://arsip.ui.ac.id/ontology/hasCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://arsip.ui.ac.id/ontology/Record"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "hasClasification"
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Archives_Categories"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/hasContentType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Clasification_Schema"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    "@id" : "https://arsip.ui.ac.id/ontology/Content_Type"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/hasResources"
+    "@id" : "https://arsip.ui.ac.id/ontology/isContentTypeOf"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/hasContributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/isContributorOf"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/hasDegree",
@@ -6233,6 +5528,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://arsip.ui.ac.id/ontology/Degree"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/isDegreeOf"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/hasDivision",
@@ -6260,30 +5558,24 @@
     "@id" : "https://arsip.ui.ac.id/ontology/ownershipEvidence"
   } ]
 }, {
-  "@id" : "https://arsip.ui.ac.id/ontology/hasGroup",
+  "@id" : "https://arsip.ui.ac.id/ontology/hasIndeks",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Organizational_Unit"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "hasGroup"
+    "@id" : "https://arsip.ui.ac.id/ontology/Clasification_Schema"
+  }, {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Unit_Group"
+    "@id" : "https://arsip.ui.ac.id/ontology/Indeks"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/isIndeksOf"
   } ]
 }, {
-  "@id" : "https://arsip.ui.ac.id/ontology/hasIndeks",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@id" : "https://arsip.ui.ac.id/ontology/hasInnovation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Clasification_Schema"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "hasIndeks"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "@id" : "https://arsip.ui.ac.id/ontology/Person"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/hasInstantiation",
@@ -6333,6 +5625,18 @@
     "@id" : "https://arsip.ui.ac.id/ontology/Person"
   } ]
 }, {
+  "@id" : "https://arsip.ui.ac.id/ontology/hasOrganizationGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Unit_Group"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/isOrganizationGroupOf"
+  } ]
+}, {
   "@id" : "https://arsip.ui.ac.id/ontology/hasPosition",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -6349,17 +5653,28 @@
     "@id" : "https://arsip.ui.ac.id/ontology/manage"
   } ]
 }, {
-  "@id" : "https://arsip.ui.ac.id/ontology/hasResources",
+  "@id" : "https://arsip.ui.ac.id/ontology/hasPositionGroup",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Clasification_Schema"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "hasResources"
+    "@id" : "https://arsip.ui.ac.id/ontology/Position"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Unit_Group"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/isPositionGroupOf"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/hasPublisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Organization"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/isPublisherOf"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/hasRetentionPeriod",
@@ -6406,6 +5721,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://arsip.ui.ac.id/ontology/Record"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Identifier"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
@@ -6423,13 +5741,148 @@
     "@id" : "https://arsip.ui.ac.id/ontology/Record"
   } ]
 }, {
+  "@id" : "https://arsip.ui.ac.id/ontology/isAwardOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Agent"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/isCategoryOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Archives_Categories"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/isContentTypeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Content_Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/isContributorOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/isDegreeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Degree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Educational_Organization"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/isIndeksOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Indeks"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/isLocationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Event"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/locatedAt"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/isOrganizationGroupOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Unit_Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Organization"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/isPositionGroupOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Unit_Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Position"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/isPublisherOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/isReplacedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/replaces"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/isRequiredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/requires"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/isStoreOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Self_Storage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/storage"
+  } ]
+}, {
   "@id" : "https://arsip.ui.ac.id/ontology/kepakaran",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme", "https://arsip.ui.ac.id/ontology/Kepakaran" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Kepakaran"
   } ],
   "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
     "@id" : "https://arsip.ui.ac.id/ontology/pakar"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/legalStatus",
@@ -6443,6 +5896,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/locatedAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Place"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/magister",
@@ -6467,19 +5929,17 @@
   "@id" : "https://arsip.ui.ac.id/ontology/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://arsip.ui.ac.id/ontology/Organization"
-  }, {
     "@id" : "https://arsip.ui.ac.id/ontology/Record"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "organizationName"
+    "@value" : "Title of Document"
   }, {
     "@language" : "en",
     "@value" : "title"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/nilaiKembali",
@@ -6542,7 +6002,7 @@
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/performe",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://arsip.ui.ac.id/ontology/Agent"
   } ],
@@ -6564,6 +6024,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://arsip.ui.ac.id/ontology/Agent"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/produces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/producesBy"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/producesBy",
@@ -6589,7 +6061,45 @@
     "@value" : "quantity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/relatedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/replaces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/requires",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/rightHolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Organization"
+  }, {
+    "@id" : "https://arsip.ui.ac.id/ontology/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Intelectual_Right"
   } ]
 }, {
   "@id" : "https://arsip.ui.ac.id/ontology/sarjana",
@@ -6609,5 +6119,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://arsip.ui.ac.id/ontology/Self_Storage"
+  } ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/subjects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ]
+}, {
+  "@id" : "https://arsip.ui.ac.id/ontology/version",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://arsip.ui.ac.id/ontology/Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 } ]
